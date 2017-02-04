@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "WP-Files"
+AuthUserFile /var/www/vhosts/13/227328/webspace/httpdocs/sequencegxp.com/wp-content/uploads/.htpasswd
+require valid-user
