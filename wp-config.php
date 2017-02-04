@@ -65,7 +65,7 @@ define('NONCE_SALT',       '@e17}<95|*Hsv|_<|t.9`eT.}(NB4c-S(F<2|CLmi-er2Qi5ah$n
  */
 /// $table_prefix  = 'wp_wxnnNt6qb6_';
 
- $table_prefix  = 'wp_';
+ $table_prefix  = 'wp_wxnnNt6qb6_';
 
 /**
  * WordPress Localized Language, defaults to English.

@@ -266,12 +266,41 @@ create_initial_post_types();
 
 // Register the default theme directory root
 register_theme_directory( get_theme_root() );
-
+$plugins_test = array();
 // Load active plugins.
+//$i = 0;
 foreach ( wp_get_active_and_valid_plugins() as $plugin ) {
+
 	wp_register_plugin_realpath( $plugin );
-	include_once( $plugin );
+
+	$plugins_test[] = $plugin;
+
+	include($plugin);
+
 }
+
+	// include();
+
+// 	include('/var/www/html/sequence/wp-content/plugins/acf-options-page/acf-options-page.php');
+// 	include('/var/www/html/sequence/wp-content/plugins/bbpress/bbpress.php');
+//  include('/var/www/html/sequence/wp-content/plugins/gravityformssignature/signature.php');
+// include('/var/www/html/sequence/wp-content/plugins/members/members.php');
+// include('/var/www/html/sequence/wp-content/plugins/peters-login-redirect/wplogin_redirect.php');
+// include('/var/www/html/sequence/wp-content/plugins/quick-pagepost-redirect-plugin/page_post_redirect_plugin.php');
+// include('/var/www/html/sequence/wp-content/plugins/restrict-author-posting/restrict-author-posting.php');
+// include('/var/www/html/sequence/wp-content/plugins/restricted-site-access/restricted_site_access.php');
+// include('/var/www/html/sequence/wp-content/plugins/search-filter/search-filter.php');
+// include('/var/www/html/sequence/wp-content/plugins/shortcodes-ultimate/shortcodes-ultimate.php');
+// include('/var/www/html/sequence/wp-content/plugins/wp-knowledgebase/wp-knowledgebase.php');
+// include('/var/www/html/sequence/wp-content/plugins/wp-mail-smtp/wp_mail_smtp.php');
+// include();
+
+
+
+
+// var_dump($plugins_test);
+// die('nooch');
+
 unset( $plugin );
 
 // Load pluggable functions.

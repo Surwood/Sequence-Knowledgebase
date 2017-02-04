@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * The bbPress Plugin
  *
@@ -33,6 +34,8 @@ if ( !class_exists( 'bbPress' ) ) :
  *
  * @since bbPress (r2464)
  */
+
+
 final class bbPress {
 
 	/** Magic *****************************************************************/
@@ -99,14 +102,20 @@ final class bbPress {
 	 */
 	public static function instance() {
 
+
+
 		// Store the instance locally to avoid private static replication
 		static $instance = null;
 
 		// Only run these methods if they haven't been ran previously
 		if ( null === $instance ) {
+
 			$instance = new bbPress;
+
 			$instance->setup_globals();
+
 			$instance->includes();
+
 			$instance->setup_actions();
 		}
 
@@ -186,6 +195,8 @@ final class bbPress {
 	 * @uses plugin_dir_url() To generate bbPress plugin url
 	 * @uses apply_filters() Calls various filters
 	 */
+
+
 	private function setup_globals() {
 
 		/** Versions **********************************************************/
@@ -284,6 +295,7 @@ final class bbPress {
 		/** Core **************************************************************/
 
 		require( $this->includes_dir . 'core/sub-actions.php'        );
+
 		require( $this->includes_dir . 'core/functions.php'          );
 		require( $this->includes_dir . 'core/cache.php'              );
 		require( $this->includes_dir . 'core/options.php'            );
@@ -898,6 +910,8 @@ final class bbPress {
 	}
 }
 
+
+
 /**
  * The main function responsible for returning the one true bbPress Instance
  * to functions everywhere.
@@ -910,6 +924,7 @@ final class bbPress {
  * @return The one true bbPress Instance
  */
 function bbpress() {
+
 	return bbpress::instance();
 }
 
@@ -919,11 +934,15 @@ function bbpress() {
  * This gives all other plugins the chance to load before bbPress, to get their
  * actions, filters, and overrides setup without bbPress being in the way.
  */
+
+
 if ( defined( 'BBPRESS_LATE_LOAD' ) ) {
+
 	add_action( 'plugins_loaded', 'bbpress', (int) BBPRESS_LATE_LOAD );
 
 // "And now here's something we hope you'll really like!"
 } else {
+
 	bbpress();
 }
 
