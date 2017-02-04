@@ -1,0 +1,47 @@
+/**
+ * Change page background.
+ */
+body.login {
+	background: #e7e7e7 url(../images/bg.jpg) no-repeat center top;
+}
+
+
+/**
+ * Change logo image sprite.
+ */
+body.login h1 a {
+	margin-bottom: 20px;
+	padding: 0;
+	width: 318px;
+	height: 85px;
+	background: url(../images/logo.png) no-repeat center center;
+}
+
+
+/**
+ * Change box shadow.
+ */
+.login form {
+	border: none;
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+
+
+/**
+ * Change links.
+ */
+body.login #nav,
+body.login #backtoblog {
+	text-align: center;
+	text-shadow: none;
+}
+body.login #nav a,
+body.login #backtoblog a {
+	color: #d40031 !important;
+	text-decoration: none;
+}
+body.login #nav a:hover,
+body.login #backtoblog a:hover {
+	color: #000 !important;
+}
