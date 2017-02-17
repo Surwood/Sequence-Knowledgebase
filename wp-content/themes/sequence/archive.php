@@ -17,7 +17,7 @@
 		<div id="hero-title">Author Archive</div>
 	<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 		<div id="hero-title">Blog Archives</div>
-	<?php } ?>		
+	<?php } ?>
 </div>
 <div id="main">
 	<div id="content">
@@ -40,7 +40,7 @@
 			<div class="post">
 				<?php if(get_field('thumbnail')): ?>
 					<img class="post-thumbnail" src="<?php the_field('thumbnail'); ?>" alt="Thumbnail" />
-				<?php endif; ?>				
+				<?php endif; ?>
 				<h2 class="post-title"><a class="post-title-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<p class="created"><?php the_time('F jS, Y') ?></p>
 				<?php the_content(); ?>

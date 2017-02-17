@@ -3,7 +3,19 @@
 	<?php if(get_field('slideshow', 'option')): ?>
 		<div class="flexslider home-page-slideshow">
 			<ul class="slides">
+				<?php
+
+				$test_img = array();
+
+				?>
 				<?php while(has_sub_field('slideshow', 'option')): ?>
+					<?php
+					// ob_start();
+					// the_sub_field('slideshow_image', 'option');
+					// $test_img[] = ob_get_contents();
+					// ob_end_clean();
+
+					?>
 					<li>
 						<a class="slideshow-slide" href="<?php the_sub_field('slideshow_link', 'option'); ?>">
 							<img class="slideshow-image" src="<?php the_sub_field('slideshow_image', 'option'); ?>" alt="Slide" />
@@ -12,6 +24,7 @@
 						</a>
 					</li>
 				<?php endwhile; ?>
+
 			</ul>
 
 			<ul class="flex-control-nav">
@@ -19,7 +32,7 @@
 					<li><a class="slideshow-tab" href="<?php the_sub_field('slideshow_link', 'option'); ?>"><?php the_sub_field('slideshow_tab', 'option'); ?></a></li>
 				<?php endwhile; ?>
 			</ul>
-		
+
 
 <!--ORIGINAL2
                         <ul class="flex-control-nav">
@@ -39,12 +52,12 @@
 			</ul>
                     -->
 		</div>
-	<?php endif; ?> 
+	<?php endif; ?>
 
 </div>
 <div id="main">
 	<div id="content">
-		<?php if(get_field('banner', 'option')): ?>
+		<?php var_dump($test_img); if(get_field('banner', 'option')): ?>
 			<?php while(has_sub_field('banner', 'option')): ?>
 				<div class="banner">
 					<img class="banner-image" src="<?php the_sub_field('banner_image', 'option'); ?>" alt="Banner" />
@@ -72,7 +85,7 @@
     <!--
             REMOVED BY RMH ON 29-JAN
 	<div id="sidebar">
-            
+
 		<div class="login-form">
 			<div class="login-form-title-wrapper">
 				<span class="login-form-title">Employee</span>
@@ -80,7 +93,7 @@
 			</div>
 			<a id="login-link" href="/employee-login/" target="_blank">Click here to login</a>
 		</div>
-          
+
 		<?php if(get_field('call_to_actions', 'option')): ?>
 			<?php while(has_sub_field('call_to_actions', 'option')): ?>
 				<a class="call-to-action-link" href="<?php the_sub_field('call_to_action_link', 'option'); ?>"><img class="call-to-action-image" src="<?php the_sub_field('call_to_action_image', 'option'); ?>" alt="Call to action" /></a>
