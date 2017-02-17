@@ -1,0 +1,23 @@
+/*
+Theme Name: Sequence Child
+Theme URI: http://www.sequenceqcs.com/
+Author: Scary Prankster
+Author URI: http://clickoptimize.com/
+Template: sequence
+Description: A tabless theme built with advanced custom fields for easy website management.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: sequence, quality, and, compliance, click, optimize
+Text Domain: clickoptimize
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+#skb-dashboard-modal {
+	z-index: 9999;
+}
+
+#dashboard-left-sidebar {  }
+#dashboard-left-sidebar ul li { list-style-type: none; }
