@@ -49,6 +49,7 @@
           $post_information['post_status'] = 'publish';
           $submit_text = "Publish Article";
         } else {
+          
           $submit_text = "Submit for Approval";
         }
 
