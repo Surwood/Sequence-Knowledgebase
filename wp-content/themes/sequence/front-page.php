@@ -57,7 +57,7 @@
 </div>
 <div id="main">
 	<div id="content">
-		<?php var_dump($test_img); if(get_field('banner', 'option')): ?>
+		<?php if(get_field('banner', 'option')): ?>
 			<?php while(has_sub_field('banner', 'option')): ?>
 				<div class="banner">
 					<img class="banner-image" src="<?php the_sub_field('banner_image', 'option'); ?>" alt="Banner" />
