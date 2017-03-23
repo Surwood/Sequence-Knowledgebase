@@ -66,6 +66,9 @@ width: 20px;
 }
 
 /*page Template*/
+
+.search_sidebar {float: right;}
+
 .search_sidebar select{
 	width: 80%;
 	padding: 7px;

@@ -2,7 +2,18 @@
 
   function sequence_add_article($atts){
 
+
+
     $user = wp_get_current_user();
+
+    $author_name = $user->display_name;
+
+    if(isset($_REQUEST['article'])){
+      $article = get_post($_REQUEST['article']);
+      $article_author = get_user_by('id',$article->post_author);
+      $author_name = $article_author->display_name;
+    }
+
     if(
       !in_array('sequence_author',(array)$user->roles ) &&
       !in_array('sequence_approver',(array)$user->roles ) &&
@@ -47,8 +58,12 @@
 
 
         if(isset($_REQUEST['article'])){
+
           $post_id = $_REQUEST['article'];
+
           if($article = get_post($post_id)){
+
+
             if(
               !in_array('sequence_approver',(array)$user->roles ) &&
               !in_array('sequence_admin',(array)$user->roles )

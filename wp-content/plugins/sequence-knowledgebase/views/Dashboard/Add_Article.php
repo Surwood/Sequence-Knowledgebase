@@ -110,7 +110,7 @@
 
             <h3>&nbspAssign Categories</h3>
 
-            <div class="col-xs-4 article-category">
+            <div class="col-xs-5 article-category">
               <fieldset>
                 <label for="postCategories1"><?php _e('Category 1','framework')?></label>
                   <?php
@@ -131,7 +131,7 @@
               </fieldset>
             </div>
 
-            <div class="col-xs-2 article-category">
+            <div class="col-xs-5 article-category">
               <fieldset>
                 <label for="postCategories2"><?php _e('Category 2','framework')?></label>
                   <?php
@@ -151,7 +151,10 @@
               </fieldset>
             </div>
 
-            <div class="col-xs-2 article-category">
+
+          </div><div class="row">
+
+            <div class="col-xs-5 article-category">
               <fieldset>
                 <label for="postCategories3"><?php _e('Category 3','framework')?></label>
                   <?php
@@ -171,7 +174,7 @@
               </fieldset>
             </div>
 
-            <div class="col-xs-2 article-category">
+            <div class="col-xs-5 article-category">
               <fieldset>
                 <label for="postCategories4"><?php _e('Category 4','framework')?></label>
 
@@ -203,7 +206,7 @@
           <fieldset>
             <label for="postAuthor"><?php _e('Author','framework')?></label>
             <div class="col-3">
-              <?php echo $user->display_name; ?>
+              <?php echo  $author_name ?>
             </div>
 
           </fieldset>
@@ -246,8 +249,8 @@
 
           <div class="btn-group"></div>
 
-          <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit for Approval', 'framework') ?></button>
-          <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Cancel', 'framework') ?></button>
+          <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
+          <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
           <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
 
       </fieldset>

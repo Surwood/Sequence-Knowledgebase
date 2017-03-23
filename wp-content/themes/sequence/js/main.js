@@ -11,6 +11,13 @@ $(document).ready(function() {
 	}).blur(function(){
 		if ( !this.value.length ) this.value = this.defaultValue;
 	});
+
+
+
+
+	// $('#footer').hide();
+	// alert('test');
+
 });
 
 
@@ -29,7 +36,7 @@ $(window).load(function(){
 		animation: "fade",
 		directionNav: false,
 		manualControls: ".flex-control-nav li"
-	});	
+	});
 	$('.employee-spotlight-slideshow').flexslider({
 		animation: "fade",
 		directionNav: false
