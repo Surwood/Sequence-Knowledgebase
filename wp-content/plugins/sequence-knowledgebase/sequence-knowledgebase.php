@@ -5,7 +5,7 @@
     Plugin Name: Sequence Knowledgebase
     Plugin URI: http://www/scaryprankster.com/
     Description: Knowledgebase for Sequence users to add and manage articles.
-    Version: 1.0.1
+    Version: 1.0.5
     Author: Scary Prankster
 
 
@@ -74,6 +74,8 @@
 
  require_once SKB_PLUGIN_PATH . 'includes/Shortcodes.php';
 
+ // require_once SKB_PLUGIN_PATH . 'includes/Taxonomies.php';
+
 
 
   add_action( 'init', 'create_article_post_type' );
@@ -93,8 +95,74 @@
           )
       );
 
+      $labels = array(
+        'name'              => _x( 'Article Categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Article Category', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Article Categories' ),
+        'all_items'         => __( 'All Article Categories' ),
+        'parent_item'       => __( 'Parent Article Category' ),
+        'parent_item_colon' => __( 'Parent Article Category:' ),
+        'edit_item'         => __( 'Edit Article Category' ),
+        'update_item'       => __( 'Update Article Category' ),
+        'add_new_item'      => __( 'Add New Article Category' ),
+        'new_item_name'     => __( 'New Article Category' ),
+        'menu_name'         => __( 'Article Categories' )
+      );
+      $args = array('labels'=> $labels,'hierarchical'=>true);
+      register_taxonomy('article_category','skb_article',$args);
+
+      $labels = array(
+        'name'              => _x( 'Article Tags 1', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Article Tag 1', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Article Tags' ),
+        'all_items'         => __( 'All Article Tags 1' ),
+        'parent_item'       => __( 'Parent Article Tag' ),
+        'parent_item_colon' => __( 'Parent Article Tag:' ),
+        'edit_item'         => __( 'Edit Article Tag' ),
+        'update_item'       => __( 'Update Article Tag' ),
+        'add_new_item'      => __( 'Add New Article Tag' ),
+        'new_item_name'     => __( 'New Article Tag' ),
+        'menu_name'         => __( 'Article Tags 1' )
+      );
+      $args = array('labels'=> $labels,'hierarchical'=>false);
+      register_taxonomy('article_tag1','skb_article',$args);
+
+      $labels = array(
+        'name'              => _x( 'Article Tags 2', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Article Tag 2', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Article Tags' ),
+        'all_items'         => __( 'All Article Tags 2' ),
+        'parent_item'       => __( 'Parent Article Tag' ),
+        'parent_item_colon' => __( 'Parent Article Tag:' ),
+        'edit_item'         => __( 'Edit Article Tag' ),
+        'update_item'       => __( 'Update Article Tag' ),
+        'add_new_item'      => __( 'Add New Article Tag' ),
+        'new_item_name'     => __( 'New Article Tag' ),
+        'menu_name'         => __( 'Article Tags 2' )
+      );
+      $args = array('labels'=> $labels,'hierarchical'=>false);
+      register_taxonomy('article_tag2','skb_article',$args);
+
+      $labels = array(
+        'name'              => _x( 'Article Tags 3', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Article Tag 3', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Article Tags' ),
+        'all_items'         => __( 'All Article Tags 3' ),
+        'parent_item'       => __( 'Parent Article Tag' ),
+        'parent_item_colon' => __( 'Parent Article Tag:' ),
+        'edit_item'         => __( 'Edit Article Tag' ),
+        'update_item'       => __( 'Update Article Tag' ),
+        'add_new_item'      => __( 'Add New Article Tag' ),
+        'new_item_name'     => __( 'New Article Tag' ),
+        'menu_name'         => __( 'Article Tags 3' )
+      );
+      $args = array('labels'=> $labels,'hierarchical'=>false);
+      register_taxonomy('article_tag3','skb_article',$args);
+
 
 
   }
+
+  // add_action('init','create_article_taxonomies');
 
 ?>

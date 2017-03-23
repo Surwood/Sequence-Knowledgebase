@@ -1,0 +1,135 @@
+<?php
+/*
+ * Template Name: Dashboard
+ */
+ ?>
+
+<?php
+
+// || (!is_user_in_role('sequence_user') && !is_user_in_role('sequence_author') && !is_user_in_role('sequence_approver') && !is_user_in_role('sequence_admin'))
+
+// die(is_user_in_role('sequence_user') . 'tetete');
+
+
+
+if(!is_user_logged_in()){
+  wp_redirect(home_url('/login/'));
+  exit;
+} else {
+  $user = wp_get_current_user();
+  if(
+    !in_array('sequence_user',(array)$user->roles ) &&
+    !in_array('sequence_author',(array)$user->roles ) &&
+    !in_array('sequence_approver',(array)$user->roles ) &&
+    !in_array('sequence_admin',(array)$user->roles )
+  ){
+    wp_redirect(home_url('/login/'));
+    exit;
+  }
+  $add_article_button = "";
+  if(
+    !in_array('sequence_author',(array)$user->roles ) &&
+    !in_array('sequence_approver',(array)$user->roles ) &&
+    !in_array('sequence_admin',(array)$user->roles )
+  ){
+    $add_article_button = "display:none;";
+  }
+  if(
+    in_array('sequence_approver',(array)$user->roles ) ||
+    in_array('sequence_admin',(array)$user->roles )
+  ){
+    global $wpdb;
+    $sql = "
+      SELECT
+      *
+      FROM ". $wpdb->posts ." posts
+      JOIN ". $wpdb->postmeta ." meta ON posts.ID = meta.post_id
+      WHERE posts.post_type = 'skb_article'
+      AND posts.post_status = 'pending'
+      AND meta.meta_key = 'post_approver'
+      AND meta.meta_value = '". get_current_user_id() ."'
+    ";
+
+
+    $pending_approval = $wpdb->get_results($sql);
+  } else {
+    $pending_approval = array();
+  }
+}
+
+$parse_uri = explode( 'index.php', $_SERVER['SCRIPT_FILENAME'] );
+require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
+
+ ?>
+
+<?php get_header(); ?>
+
+<div id="main">
+	<div id="content" class="wide" style="width: 100%;">
+
+
+
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div id="main-content" class="full-width">
+				<h1><?php the_title(); ?></h1>
+
+
+
+				<?php the_content(); ?>
+
+        <?php if(is_page('dashboard')){?>
+          <div id="dashboard-left-sidebar">
+            <ul>
+              <li><button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button></li>
+            </ul>
+          </div>
+        <?php }?>
+
+			</div>
+		<?php endwhile; ?>
+		<?php else : ?>
+			<div id="main-content">
+				<h2>Not Found</h2>
+			</div>
+		<?php endif; ?>
+
+
+	</div>
+
+</div>
+
+<div id="skb-dashboard-modal" class="modal fade bs-example-modal-md skb-modal" tabindex="-1" role="dialog" aria-labelledby="modal-header">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="col-xs-2">
+						<div id="img-icon"></div>
+				</div>
+				<div class="col-xs-8">
+					<h4 class="modal-title" id="myModalLabel">Sequence Knowledgebase</h4>
+				</div>
+				<div class="col-xs-2">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="glyphicons glyphicons-remove">X</i></span></button>
+				</div>
+			</div>
+			<div class="modal-body">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+$('#dashboard-left-sidebar .controls').click(function(){
+
+  // $('#skb-dashboard-modal').modal();
+  // alert('');
+  window.location.href = "<?php echo site_url(); ?>/dashboard/add-article";
+
+});
+
+</script>
+
+<?php get_footer(); ?>
