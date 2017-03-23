@@ -64,7 +64,8 @@
 
       wp_localize_script('skb-header-js', 'php_vars', array(
           'url' => SKB_PLUGIN_URL,
-          'path' =>    SKB_PLUGIN_PATH
+          'path' =>    SKB_PLUGIN_PATH,
+          'site'=>  siteurl()
       ));
 
 

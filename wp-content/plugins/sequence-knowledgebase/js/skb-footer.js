@@ -4,7 +4,7 @@
     // alert('test');
     $('#footer').hide();
     $('.return-home').click(function(){
-      window.location.href = php_vars.url + "dashboard/";
+      window.location.href = php_vars.site + "/dashboard/";
     });
   });
 
