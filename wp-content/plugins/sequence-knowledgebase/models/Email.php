@@ -19,7 +19,7 @@
         // var_dump($this->approver->user_email);
         $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
         var_dump($args);
-        $mail = mail($this->approver->user_email,$this->subject,$this->message,$this->header);
+        $mail = mail($this->approver->user_email,"test2","dadfdfdfdfdfdfdfdf",$this->header);
         var_dump($mail);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
