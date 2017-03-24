@@ -20,14 +20,12 @@
         // $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
         // var_dump($args);
         $mail = mail($this->approver->user_email,$this->subject,$this->message,$this->header);
-        var_dump("test5");
+
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
-        $args = array($this->author->user_email,$this->subject,$this->message, $this->header);
-        var_dump($args);
-        $mail = mail($args);
-        var_dump($mail);
+
+        mail($this->author->email,$this->subject,$this->message,$this->header);
       }
 
     }
