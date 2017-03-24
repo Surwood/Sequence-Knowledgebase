@@ -3,7 +3,7 @@
 
   class Sequence_Email {
 
-    var $author,$approver,$article,$subject,$message;
+    var $author,$approver,$article,$subject,$message,$header = "From: gsequence@sequenceqcs.com";
 
     function __construct($author_id,$approver_id,$article_id){
       $this->author = get_user_by('id',$author_id);
@@ -18,12 +18,12 @@
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         // var_dump($this->approver->user_email);
 
-        $mail = mail($this->approver->user_email,"test","testtestese","From: jay@sequencegxp.com");
-        var_dump($mail);
+        $mail = wp_mail($this->approver->user_email,$this->subject,$this->message,$this->header);
+        // var_dump($mail);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
-        mail($this->author->user_email,$this->subject,$this->message);
+        wp_mail($this->author->user_email,$this->subject,$this->message, $this->header);
       }
 
     }
