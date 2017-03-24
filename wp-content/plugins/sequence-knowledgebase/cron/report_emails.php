@@ -17,7 +17,7 @@
 
   foreach($posts as $post){
     $rating = 0;
-    $views = ;
+    $views = count(get_post_meta($post->ID,'article_view'));
 
   }
 
