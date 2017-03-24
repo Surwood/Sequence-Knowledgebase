@@ -115,7 +115,7 @@
 
         if(in_array('sequence_approver',(array)$user->roles )){
 
-          $email = new Sequence_Email($_POST['postAuthor'],$user->ID,$article->ID);
+          $email = new Sequence_Email($article->post_author,$user->ID,$article->ID);
           // var_dump($email);
           $email->send("approval");
         } elseif(in_array('sequence_author',(array)$user->roles )){
