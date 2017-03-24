@@ -26,6 +26,7 @@
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
 
         mail($this->author->user_email,$this->subject,$this->message,$this->header);
+        var_dump('test');
       }
 
     }
