@@ -164,6 +164,10 @@
 
   }
 
+  // die(SKB_PLUGIN_PATH . 'models/Email.php');
+
+  require_once  SKB_PLUGIN_PATH . 'models/Email.php';
+
   // add_action('init','create_article_taxonomies');
 
 ?>

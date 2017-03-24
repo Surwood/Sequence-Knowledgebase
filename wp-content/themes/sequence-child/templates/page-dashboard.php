@@ -9,6 +9,8 @@
 // die(is_user_in_role('sequence_user') . 'tetete');
 // die('test');
 
+
+
 //we comment here for getting access in this page
 if(!is_user_logged_in()){
   wp_redirect(home_url('/login/'));
@@ -63,9 +65,9 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
         //building search query depending on several conditions.
         $search_sql = "SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
-        FROM wp_posts p
-        LEFT JOIN wp_term_relationships r ON (p.ID = r.object_id)
-        LEFT JOIN wp_postmeta m ON ( p.ID = m.post_id )
+        FROM ". $wpdb->posts ." p
+        LEFT JOIN ".$wpdb->term_relationships." r ON (p.ID = r.object_id)
+        LEFT JOIN ".$wpdb->postmeta." m ON ( p.ID = m.post_id )
         WHERE 1=1 ";
         if(!empty($dateAfter) && !empty($dateBefore) ) {
 
@@ -120,18 +122,18 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
         $pageposts = $wpdb->get_results($search_sql,OBJECT);
 
-        // die($search_sql);
+        // var_dump($search_sql);
 
             if ($pageposts):
                 $allPosts = array();
                 ?>
 
                 <div class="row">
-                    <div class="col-sm-3 text-center"><h2>Title</h2></div>
-                    <div class="col-sm-3 text-center"><h2>Summery</h2></div>
-                    <div class="col-sm-3 text-center"><h2>Rate</h2></div>
-                    <div class="col-sm-1 text-center" style="padding: 0; text-align: left;"><h2>View</h2></div>
-                    <div class="col-sm-2 text-center"><h2>Date</h2></div>
+                    <div class="col-sm-4 text-center"><h2>Title</h2></div>
+                    <div class="col-sm-4 text-center"><h2>Summary</h2></div>
+                    <div class="col-sm-2 text-center"><h2>Rating</h2></div>
+                    <div class="col-sm-1 text-center" style="padding: 0; text-align: left;"><h2>Views</h2></div>
+                    <div class="col-sm-1 text-center"><h2>Date</h2></div>
                 </div>
 
 
@@ -142,9 +144,20 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
                     $allPosts[$key]['ID'] =$post->ID;
                     $allPosts[$key]['post_title'] =$post->post_title;
                     $allPosts[$key]['post_excerpt'] =$post->post_excerpt;
-                    $allPosts[$key]['post_rate'] =count(get_post_meta(get_the_ID(),'article_rating'));
+                    $avg_rating = 0;
+                    $ratings = get_post_meta(get_the_ID(),'article_rating');
+                    $total_ratings = count($ratings);
+                    $ratings_total = 0;
+                    if($total_ratings > 0){
+                      foreach($ratings as $value){
+                        list($user_id,$rating) = explode('_',$value);
+                        $ratings_total += $rating;
+                      }
+                      $avg_rating = round($ratings_total / $total_ratings,1);
+                    }
+                    $allPosts[$key]['post_rate'] = $avg_rating;
                     $allPosts[$key]['post_view'] =count(get_post_meta(get_the_ID(),'article_view'));
-                    $allPosts[$key]['post_date'] =date('Y-m-d', strtotime($post->post_date));
+                    $allPosts[$key]['post_date'] =date('n/d/Y', strtotime($post->post_date));
 
                 endforeach;
                 ?>
@@ -163,14 +176,14 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
                 //print sorted posts.
                 foreach ($allPosts as $post){?>
                     <div class="row margin_row">
-                    <div class="col-sm-3">
-                        <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><h3><?php echo $post['post_title']; ?></h3></a>
+                    <div class="col-sm-4">
+                        <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
                     </div>
-                    <div class="col-sm-3"><?php echo $post['post_excerpt'];?></div>
+                    <div class="col-sm-4"><?php echo $post['post_excerpt'];?></div>
                     <?php $rating = $post['post_rate']; ?>
-                    <div id="rank-stars-<?php echo $post['ID'];?>" class="col-sm-3 text-center ratingWrapper" data-rating="<?php echo $rating; ?>"> <?php echo $rating; ?> </div>
+                    <div id="rank-stars-<?php echo $post['ID'];?>" class="col-sm-2 text-center ratingWrapper" data-rating="<?php echo $rating; ?>"> <?php echo $rating; ?> </div>
                     <div class="col-sm-1 text-center"><?php echo $post['post_view'];?></div>
-                    <div class="col-sm-2 text-center"><?php echo $post['post_date']; ?></div>
+                    <div class="col-sm-1 text-center"><?php echo $post['post_date']; ?></div>
                     </div><?php
                 }
                 ?>
@@ -371,7 +384,7 @@ jQuery(function($){
 		var rating = $(this).attr('data-rating');
 		// console.log('id : '+id+' == rating : '+rating);
 
-		$(id).rateYo({ rating: rating });
+		$(id).rateYo({ rating: rating, starWidth: "20px", readOnly: true });
 
 	});
 	// var my_rating = "<?php //echo $rating; ?>";

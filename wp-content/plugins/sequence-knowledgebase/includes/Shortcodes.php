@@ -49,7 +49,7 @@
           $post_information['post_status'] = 'publish';
           $submit_text = "Publish Article";
         } else {
-          
+
           $submit_text = "Submit for Approval";
         }
 
@@ -111,6 +111,18 @@
           $article->post_approver = $_POST['postApprover'];
           // die($article->post_approver);
           update_post_meta($post_id,'post_approver',$article->post_approver);
+        }
+
+        if(in_array('sequence_approver',(array)$user->roles )){
+
+          $email = new Sequence_Email($_POST['postAuthor'],$user->ID,$article->ID);
+          // var_dump($email);
+          $email->send("approval");
+        } elseif(in_array('sequence_author',(array)$user->roles )){
+
+          $email = new Sequence_Email($user->ID,$_POST['postApprover'],$article->ID);
+          // var_dump($email);
+          $email->send("request");
         }
 
     } else {
