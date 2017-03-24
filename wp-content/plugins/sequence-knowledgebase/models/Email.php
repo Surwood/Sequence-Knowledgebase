@@ -20,7 +20,7 @@
         // $args = array($this->approver->user_email,"test2",$this->message,$this->header);
         // var_dump($args);
         mail($this->approver->user_email,"test2","dadfdfdfdfdfdfdfdf","From: jay@sequencegxp.com");
-        // var_dump($mail);
+        var_dump("test3");
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
