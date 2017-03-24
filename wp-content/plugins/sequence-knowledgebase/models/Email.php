@@ -17,13 +17,16 @@
         $this->subject = "Approval request from " . $this->author->display_name;
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         // var_dump($this->approver->user_email);
-
-        $mail = wp_mail($this->approver->user_email,$this->subject,$this->message,$this->header);
+        $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
+        var_dump($args);
+        $mail = mail($args);
         var_dump($mail);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
-        $mail = wp_mail($this->author->user_email,$this->subject,$this->message, $this->header);
+        $args = array($this->author->user_email,$this->subject,$this->message, $this->header);
+        var_dump($args);
+        $mail = mail($args);
         var_dump($mail);
       }
 
