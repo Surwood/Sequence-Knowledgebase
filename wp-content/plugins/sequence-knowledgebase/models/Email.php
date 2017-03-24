@@ -17,9 +17,9 @@
         $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         // var_dump($this->approver->user_email);
-        $args = array($this->approver->user_email,"test2",$this->message,$this->header);
-        var_dump($args);
-        mail($this->approver->user_email,"test2","dadfdfdfdfdfdfdfdf","From: gsequence@sequenceqcs.com");
+        // $args = array($this->approver->user_email,"test2",$this->message,$this->header);
+        // var_dump($args);
+        mail($this->approver->user_email,"test2","dadfdfdfdfdfdfdfdf","From: jay@sequencegxp.com");
         // var_dump($mail);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
