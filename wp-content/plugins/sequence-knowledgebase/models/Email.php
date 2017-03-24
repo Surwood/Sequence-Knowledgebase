@@ -19,11 +19,12 @@
         // var_dump($this->approver->user_email);
 
         $mail = wp_mail($this->approver->user_email,$this->subject,$this->message,$this->header);
-        // var_dump($mail);
+        var_dump($mail);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
-        wp_mail($this->author->user_email,$this->subject,$this->message, $this->header);
+        $mail = wp_mail($this->author->user_email,$this->subject,$this->message, $this->header);
+        var_dump($mail);
       }
 
     }
