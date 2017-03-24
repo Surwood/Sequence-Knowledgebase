@@ -44,6 +44,15 @@
   $post = $results[$high_rating][$most_views][0];
   $author = get_user_by('ID',$post->post_author);
 
+  $args = array(
+    $author->user_email,
+    'Highest Ranking Article!',
+    "Your article '". $post->post_title ."' received and average\n rating of ". $high_rating ." and got ". $most_views ." page views. ",
+    "gsequence@sequencegxp.com"
+  );
+
+  var_dump($args);
+
   mail(
     $author->user_email,
     'Highest Ranking Article!',
@@ -51,5 +60,6 @@
     "gsequence@sequencegxp.com"
   );
 
+  echo "Mail sent".
 
  ?>
