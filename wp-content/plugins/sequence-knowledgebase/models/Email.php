@@ -14,7 +14,7 @@
 
     public function send($reason){
       if($reason == "request"){
-        $this->subject = "Approval request from " . $this->author->display_name;
+        $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         // var_dump($this->approver->user_email);
         $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
