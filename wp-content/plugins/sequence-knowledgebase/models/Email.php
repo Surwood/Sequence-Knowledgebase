@@ -17,17 +17,17 @@
         $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         // var_dump($this->approver->user_email);
-        // $args = array($this->approver->user_email,"test2",$this->message,$this->header);
+        // $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
         // var_dump($args);
-        mail($this->approver->user_email,"test2","dadfdfdfdfdfdfdfdf","From: jay@sequencegxp.com");
-        var_dump("test3");
+        $mail = mail($this->approver->user_email,$this->subject,$this->message,$this->header);
+        var_dump("test4");
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
         $args = array($this->author->user_email,$this->subject,$this->message, $this->header);
         var_dump($args);
-        mail($this->author->user_email,$this->subject,$this->message, $this->header);
-        // var_dump($mail);
+        $mail = mail($args);
+        var_dump($mail);
       }
 
     }
