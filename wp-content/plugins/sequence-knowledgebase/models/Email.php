@@ -21,13 +21,13 @@
         // var_dump($args);
         // var_dump()
         mail($this->approver->user_email,$this->subject,$this->message,$this->header);
-        var_dump($this->approver->user_email);
+        //var_dump($this->approver->user_email);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
 
         mail($this->author->user_email,$this->subject,$this->message,$this->header);
-        var_dump($this->author->user_email);
+        //var_dump($this->author->user_email);
       }
 
     }
