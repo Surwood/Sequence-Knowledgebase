@@ -23,8 +23,8 @@ if(!is_user_logged_in()){
     !in_array('sequence_approver',(array)$user->roles ) &&
     !in_array('sequence_admin',(array)$user->roles )
   ){
-    // wp_redirect(home_url('/login/'));
-    // exit;
+    wp_redirect(home_url('/login/'));
+    exit;
   }
   $add_article_button = "";
   if(
@@ -202,11 +202,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 					<?php the_content(); ?>
 
 					<?php if(is_page('dashboard')){?>
-					  <div id="dashboard-left-sidebar">
-						<ul>
-						  <li><button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button></li>
-						</ul>
-					  </div>
+
 					<?php }?>
 
 				</div>
@@ -330,8 +326,15 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   			<div class="">
   				<input type="hidden" name="check_filter" value="100134"/>
   				<!-- <input type="submit" value="Filter" id="" /> -->
-          <button type="submit" value="Fileter" id="" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
+
   			</div>
+
+        <div id="dashboard-left-sidebar">
+
+            <button type="submit" value="Fileter" id="" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
+            <button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button>
+
+        </div>
 
   			</form>
 
