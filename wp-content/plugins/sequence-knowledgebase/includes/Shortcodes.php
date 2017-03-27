@@ -177,6 +177,7 @@
         AND posts.post_status = 'pending'
         AND meta.meta_key = 'post_approver'
         AND meta.meta_value = '". get_current_user_id() ."'
+
       ";
 
 
@@ -185,7 +186,7 @@
       $pending_approval = array();
     }
 
-    $args = array('post_type'=>'skb_article');
+    $args = array('post_type'=>'skb_article','posts_per_page'=>'5');
     $query = new WP_Query($args);
 
     include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
