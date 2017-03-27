@@ -6,6 +6,25 @@
 
 
   <div id="sequence-view-article" class="container">
+
+
+    <div class="row">
+      <hr />
+      <div class="col-lg-12 ">
+
+        <div class="btn-group"></div>
+          <button type="button" class="btn btn-secondary article-action cancel-article">Home</button>
+          <button type="button" class="btn btn-secondary article-action edit-article">Edit</button>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
     <div class="row">
       <div class="col-xs-12">
           <hr /><h2>Title:</h2><hr />
@@ -23,7 +42,7 @@
     <div class="row">
       <div class="col-xs-12">
           <hr /><h2>Article:</h2><hr />
-    
+
 
           <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
@@ -125,8 +144,8 @@
       <div class="col-lg-12 ">
 
         <div class="btn-group"></div>
-          <button type="button" class="btn btn-secondary btn-lg article-action cancel-article">Home</button>
-          <button type="button" class="btn btn-secondary btn-lg article-action edit-article">Edit</button>
+          <button type="button" class="btn btn-secondary article-action cancel-article">Home</button>
+          <button type="button" class="btn btn-secondary article-action edit-article">Edit</button>
 
 
 

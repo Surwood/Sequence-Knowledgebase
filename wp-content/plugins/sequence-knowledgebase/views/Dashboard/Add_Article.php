@@ -54,6 +54,15 @@
 
 <div id="sequence-article-form" class="container add-article">
 
+  <div class="btn-group"></div>
+
+    <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
+    <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
+    <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
+
+
+
+
 <hr />
 
 <?php if ( $postTitleError != '' ) { ?>
@@ -249,11 +258,15 @@
           <input type="hidden" name="submitted" id="submitted" value="true" />
           <?php wp_nonce_field( 'post_nonce', 'post_nonce_field' ); ?>
 
-          <div class="btn-group"></div>
+          <div class="btn-group">
 
-          <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
-          <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
-          <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
+            <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
+            <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
+            <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
+
+
+          </div>
+
 
       </fieldset>
     </div>
