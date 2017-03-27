@@ -23,7 +23,17 @@
     <div class="row">
       <div class="col-xs-12">
           <hr /><h2>Article:</h2><hr />
-          <p><?php echo $article->post_content; ?></p>
+    
+
+          <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+              <?php the_content(); ?>
+
+          <?php endwhile; wp_reset_postdata(); ?>
+
+          <?php endif; ?>
+
+
       </div>
     </div>
 

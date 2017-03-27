@@ -66,7 +66,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
         //building search query depending on several conditions.
         $search_sql = "SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
         FROM ". $wpdb->posts ." p
-        LEFT JOIN ".$wpdb->term_relationships." r ON (p.ID = r.object_id)
+        LEFT JOIN ".$wpdb->terms." r ON (p.ID = r.object_id)
         LEFT JOIN ".$wpdb->postmeta." m ON ( p.ID = m.post_id )
         WHERE 1=1 ";
         if(!empty($dateAfter) && !empty($dateBefore) ) {
@@ -122,7 +122,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
         $pageposts = $wpdb->get_results($search_sql,OBJECT);
 
-        // var_dump($search_sql);
+        die($search_sql);
 
             if ($pageposts):
                 $allPosts = array();
