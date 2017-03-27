@@ -95,7 +95,9 @@
                   'quicktags'=>false,
                   'editor_height'=>225,
                   'drag_drop_upload'=>true,
-                  'editor_class'=>"form-control article-body required"
+                  'editor_class'=>"form-control article-body required",
+                  'media_buttons'=>true,
+                  'teeny'=>false
                 )
               );
 

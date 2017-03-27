@@ -27,7 +27,7 @@
       <a href="<?php echo site_url() . "/dashboard/view-article/?article=" . get_the_ID(); ?>">
       <h1><?php the_title(); ?></h1>
 
-      <?php the_content(); ?>
+      <?php //the_content(); ?>
     </a>
     </div>
   <?php endwhile; wp_reset_postdata(); ?>

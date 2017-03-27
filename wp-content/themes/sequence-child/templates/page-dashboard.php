@@ -23,8 +23,8 @@ if(!is_user_logged_in()){
     !in_array('sequence_approver',(array)$user->roles ) &&
     !in_array('sequence_admin',(array)$user->roles )
   ){
-    wp_redirect(home_url('/login/'));
-    exit;
+    // wp_redirect(home_url('/login/'));
+    // exit;
   }
   $add_article_button = "";
   if(

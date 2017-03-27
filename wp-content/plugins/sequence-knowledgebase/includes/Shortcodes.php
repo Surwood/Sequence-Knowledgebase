@@ -263,7 +263,7 @@
 
     $article->view_count = count(get_post_meta($article_id,'article_view'));
 
-    $args = array('ID'=>$article->ID,'post_type'=>'skb_article');
+    $args = array('p'=>$article->ID,'post_type'=>'skb_article');
     $wp_query = new WP_Query($args);
 
     include SKB_PLUGIN_PATH . "views/Dashboard/View_Article.php";
