@@ -164,6 +164,18 @@
 
   }
 
+  function custom_post_status(){
+  	register_post_status( 'deleted', array(
+  		'label'                     => _x( 'Deleted', 'post' ),
+  		'public'                    => true,
+  		'exclude_from_search'       => false,
+  		'show_in_admin_all_list'    => true,
+  		'show_in_admin_status_list' => true,
+  		'label_count'               => _n_noop( 'Deleted <span class="count">(%s)</span>', 'Deleted <span class="count">(%s)</span>' ),
+  	) );
+  }
+  add_action( 'init', 'custom_post_status' );
+
   // die(SKB_PLUGIN_PATH . 'models/Email.php');
 
   require_once  SKB_PLUGIN_PATH . 'models/Email.php';
