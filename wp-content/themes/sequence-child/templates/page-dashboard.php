@@ -122,7 +122,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
         $pageposts = $wpdb->get_results($search_sql,OBJECT);
 
-        die($search_sql);
+        // die($search_sql);
 
             if ($pageposts):
                 $allPosts = array();
