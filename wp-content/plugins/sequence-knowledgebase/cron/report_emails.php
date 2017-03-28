@@ -60,6 +60,6 @@
     "gsequence@sequencegxp.com"
   );
 
-  echo "Mail sent".
+  echo "Mail sent";
 
  ?>
