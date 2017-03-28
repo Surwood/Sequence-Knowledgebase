@@ -148,35 +148,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
         $search = new Article_Search($search_filters);
 
-        $post_ids = array();
-        foreach($search->get_results() as $post){
-          $post_ids[] = $post->ID;
-        }
-
-        $search_sql = "
-          SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
-          FROM ". $wpdb->posts ." p
-          LEFT JOIN ".$wpdb->postmeta." m ON ( p.ID = m.post_id )
-          WHERE
-        ";
-
-        foreach($post_ids as $key => $post_id){
-          $post_ids[$key] = " p.ID = '" . $post_id . "' ";
-        }
-
-        if(count($post_ids) > 0){
-          $search_sql .= implode(' OR ',$post_ids);
-        } else {
-          $search_sql .= " 1=0 ";
-        }
-
-        $search_sql .= " GROUP BY p.ID ORDER BY p.post_date DESC ";
-
         // var_dump($search->get_results()->posts);
-
-        $pageposts = $wpdb->get_results($search_sql);
-
-        // die($search_sql);
 
         // $pagePosts = $search->get_results();
 
