@@ -6,7 +6,7 @@
     Plugin URI: http://www/scaryprankster.com/
     Description: Knowledgebase for Sequence users to add and manage articles.
     Version: 1.0.5
-    Author: Scary Prankster
+    Author: Jay Long
 
 
 */
