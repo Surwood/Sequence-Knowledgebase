@@ -267,6 +267,12 @@
     $args = array('p'=>$article->ID,'post_type'=>'skb_article');
     $wp_query = new WP_Query($args);
 
+    $edit_article_button = "display: none;";
+
+    if($article->post_author == get_current_user_id()){
+      $edit_article_button = "";
+    }
+
     include SKB_PLUGIN_PATH . "views/Dashboard/View_Article.php";
 
 
