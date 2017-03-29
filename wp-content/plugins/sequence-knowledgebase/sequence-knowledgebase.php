@@ -180,6 +180,15 @@
 
   require_once  SKB_PLUGIN_PATH . 'models/Email.php';
 
+
+  // if ( (current_user_can('sequence_author') || current_user_can('sequence_approver') || current_user_can('sequence_admin') || ) && !current_user_can('upload_files') )
+  // add_action('admin_init', 'allow_contributor_uploads');
+  //
+  // function allow_contributor_uploads() {
+  //      $contributor = get_role('con');
+  //      $contributor->add_cap('upload_files');
+  // }
+
   // add_action('init','create_article_taxonomies');
 
 ?>
