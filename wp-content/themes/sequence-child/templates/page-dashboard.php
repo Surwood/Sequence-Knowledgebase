@@ -47,6 +47,9 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 	<div id="content" class="wide" style="width: 100%;">
 	<div class="row">
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <button type="button"  class="btn controls home">home</button>
+      <button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button>
+
 		<?php
 			if( $_POST['check_filter'] == '100134' ){
 
@@ -291,7 +294,14 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
           <?php //get_search_form(); ?>
   				<input type="text" name="look" id="s" />
   			</div>
-  				<h1>Categories</h1>
+        <br />
+        <div id="dashboard-left-sidebar">
+
+            <button type="submit" value="Fileter" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
+
+
+        </div>
+  				<h1>Filters</h1>
   			<div class="">
   				<fieldset>
   					<label for="postCategories1"><?php _e('Category 1','framework')?></label>
@@ -388,15 +398,10 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   			<div class="">
   				<input type="hidden" name="check_filter" value="100134"/>
   				<!-- <input type="submit" value="Filter" id="" /> -->
-
+          <button type="submit" value="Fileter" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
   			</div>
 
-        <div id="dashboard-left-sidebar">
 
-            <button type="submit" value="Fileter" id="" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
-            <button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button>
-
-        </div>
 
   			</form>
 
@@ -434,11 +439,18 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 <script>
 
-$('#dashboard-left-sidebar .controls').click(function(){
+$('.controls').click(function(){
 
   // $('#skb-dashboard-modal').modal();
   // alert('');
-  window.location.href = "<?php echo site_url(); ?>/dashboard/add-article";
+
+  if($(this).hasClass('home')){
+    window.location.href = "<?php echo site_url(); ?>/dashboard/";
+  } else {
+      window.location.href = "<?php echo site_url(); ?>/dashboard/add-article";
+  }
+
+
 
 });
 
