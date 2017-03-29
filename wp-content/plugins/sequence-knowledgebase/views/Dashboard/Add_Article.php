@@ -131,7 +131,7 @@
 
             <div class="col-xs-5 article-category">
               <fieldset>
-                <label for="postCategories1"><?php _e('Category 1','framework')?></label>
+                <label for="postCategories1"><?php _e('Category 1','framework')?></label><br />
                   <?php
                   $selected = 0;
                   if (isset($_POST['postCategories1'])){ $selected = $_POST['postCategories1']; }
@@ -152,7 +152,7 @@
 
             <div class="col-xs-5 article-category">
               <fieldset>
-                <label for="postCategories2"><?php _e('Category 2','framework')?></label>
+                <label for="postCategories2"><?php _e('Category 2','framework')?></label><br />
                   <?php
                   $selected = 0;
                   if (isset($_POST['postCategories2'])){ $selected = $_POST['postCategories2']; }
@@ -175,7 +175,7 @@
 
             <div class="col-xs-5 article-category">
               <fieldset>
-                <label for="postCategories3"><?php _e('Category 3','framework')?></label>
+                <label for="postCategories3"><?php _e('Category 3','framework')?></label><br />
                   <?php
                   $selected = 0;
                   if (isset($_POST['postCategories3'])){ $selected = $_POST['postCategories3']; }
@@ -195,7 +195,7 @@
 
             <div class="col-xs-5 article-category">
               <fieldset>
-                <label for="postCategories4"><?php _e('Category 4','framework')?></label>
+                <label for="postCategories4"><?php _e('Category 4','framework')?></label><br />
 
                   <?php
                   $selected = 0;
@@ -238,12 +238,14 @@
               <?php
               $selected = 0;
               if (isset($_POST['postApprover'])){ $selected = $_POST['postApprover']; }
+                $users_with_role = implode(",", get_users ( array ( 'fields' => 'id', 'role' => 'sequence_approver' ) ) );
                 $args = array(
                   'id'  =>  'postApprover',
                   'name'  =>  'postApprover',
                   'show_option_none' => 'Choose an approver...',
                   'hide_empty' => 0,
-                  'role_in'=> array("sequence_approver"),
+                  'include_selected' => true,
+                  'include' => $users_with_role,
                   'selected'  =>  $selected
                 );
                 wp_dropdown_users($args);

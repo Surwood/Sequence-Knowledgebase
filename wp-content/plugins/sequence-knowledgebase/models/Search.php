@@ -106,11 +106,6 @@
           array(
             'post_type' =>  "skb_article",
             'post_status' =>  "publish",
-            // 'meta_query'  =>  array(
-            //   array(
-            //     'key' =>  "article_view"
-            //   )
-            // ),
             's' =>  $string,
             'tax_query' =>  $tax_query,
             'date_query'  =>  $date_query
