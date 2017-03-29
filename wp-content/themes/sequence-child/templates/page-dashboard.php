@@ -149,7 +149,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
         $search = new Article_Search($search_filters);
 
         $post_ids = array();
-        foreach($search->get_results() as $post){
+        foreach($search->get_results()->posts as $post){
           $post_ids[] = $post->ID;
         }
 
@@ -173,6 +173,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
         $search_sql .= " GROUP BY p.ID ORDER BY p.post_date DESC ";
 
         // var_dump($search->get_results()->posts);
+        // var_dump($post_ids);
 
         $pageposts = $wpdb->get_results($search_sql);
 
