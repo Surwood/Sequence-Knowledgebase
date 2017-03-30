@@ -52,7 +52,7 @@
       wp_enqueue_style('skb-css');
 
       wp_register_script('skb-header-js',SKB_PLUGIN_URL . 'js/skb-header.js',array('jquery'),1);
-      wp_register_script('skb-footer-js',SKB_PLUGIN_URL . 'js/skb-footer.js',array('jquery'),1,true);
+      wp_register_script('skb-footer-js',SKB_PLUGIN_URL . 'js/skb-footer.js',array('jquery','jquery-ui-datepicker'),1,true);
 
       // die(SKB_PLUGIN_PATH . 'js/skb-header.js');
 

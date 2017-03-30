@@ -40,6 +40,8 @@
 
 
 
+
+
         //if user role > author, post status = publish
 
         if(
@@ -47,6 +49,10 @@
           in_array('sequence_admin',(array)$user->roles )
         ){
           $post_information['post_status'] = 'publish';
+          if($_POST['postApprover']) != $user->ID){
+            $post_information['post_status'] = 'pending';
+          }
+
           $submit_text = "Publish Article";
         } else {
 

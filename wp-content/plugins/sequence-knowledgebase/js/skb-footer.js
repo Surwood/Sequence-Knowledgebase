@@ -1,6 +1,7 @@
 
 
   jQuery(document).ready(function($){
+    // $('.date').datepicker();
     // alert('test');
     $('#footer').hide();
     $('.return-home').click(function(){

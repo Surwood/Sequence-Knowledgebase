@@ -20,7 +20,6 @@
 
 
 
-
       </div>
     </div>
 
@@ -145,7 +144,7 @@
 
         <div class="btn-group"></div>
           <button type="button" class="btn btn-secondary article-action cancel-article">Home</button>
-          <button type="button" class="btn btn-secondary article-action edit-article">Edit</button>
+          <button type="button" class="btn btn-secondary article-action edit-article" style="<?php echo $edit_article_button; ?>">Edit</button>
 
 
 
