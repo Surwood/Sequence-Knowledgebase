@@ -49,7 +49,7 @@
           in_array('sequence_admin',(array)$user->roles )
         ){
           $post_information['post_status'] = 'publish';
-          if($_POST['postApprover']) != $user->ID){
+          if($_POST['postApprover'] != $user->ID){
             $post_information['post_status'] = 'pending';
           }
 
