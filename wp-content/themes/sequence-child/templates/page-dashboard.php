@@ -56,7 +56,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 			 if (have_posts()) : while (have_posts()) : the_post();?>
 
 				<div id="main-content" class="full-width">
-					
+
 					<?php the_content(); ?>
 
 					<?php if(is_page('dashboard')){?>
@@ -195,6 +195,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   				<!-- <input type="submit" value="Filter" id="" /> -->
           <button class="btn btn-secondary sequence-filter-submit"><?php _e('Submit', 'framework') ?></button>
   			</div>
+
+        <br />
 
 
 
