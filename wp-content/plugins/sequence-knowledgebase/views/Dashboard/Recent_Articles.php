@@ -17,6 +17,14 @@
 
   }
 
+  if(count($your_articles)>0){
+    $your_query = new WP_Query($args);
+    ?><hr /><h2>Your Articles</h2><hr /><?php
+
+
+  }
+
+
 ?>
 
 

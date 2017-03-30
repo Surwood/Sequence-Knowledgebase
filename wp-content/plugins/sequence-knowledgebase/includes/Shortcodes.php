@@ -168,12 +168,15 @@
   function sequence_recent_articles($atts){
 
     $user = wp_get_current_user();
+    global $wpdb;
+
+    $pending_approval = array();
 
     if(
       in_array('sequence_approver',(array)$user->roles ) ||
       in_array('sequence_admin',(array)$user->roles )
     ){
-      global $wpdb;
+
       $sql = "
         SELECT
         *
@@ -188,9 +191,33 @@
 
 
       $pending_approval = $wpdb->get_results($sql);
-    } else {
-      $pending_approval = array();
     }
+
+    $sql = "
+      SELECT
+      ID
+      FROM ". $wpdb->posts ." posts
+      WHERE posts.post_type = 'skb_article'
+      AND posts.author_id = '". $user->ID ."'
+      AND (posts.post_status = 'pending' || posts.post_status = 'publish')
+
+    ";
+
+    $your_articles = array();
+    $your_articles = $wpdb->get_results($sql);
+
+
+    // if(count($your_articles) > 0){
+    //   $args = array(
+    //     'post_type' =>  'skb_article',
+    //     'post_in' => $your_articles
+    //   );
+    //   $your_query = new WP_Query($args);
+    // }
+
+
+
+
 
     $args = array('post_type'=>'skb_article','posts_per_page'=>'5');
     $query = new WP_Query($args);
