@@ -26,7 +26,7 @@
 
         $string = "";
         $tax_query = array(
-          'relation'  =>  "OR"
+          'relation'  =>  "AND"
         );
         $date_query = false;
 
