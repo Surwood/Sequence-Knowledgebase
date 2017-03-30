@@ -30,9 +30,9 @@ jQuery(document).ready(function($){
   $('.controls').click(function(){
 
     if($(this).hasClass('home')){
-      window.location.href = php_vars.url + "dashboard/";
+      window.location.href = php_vars.site + "dashboard/";
     } else {
-        window.location.href = php_vars.url + "dashboard/add-article";
+        window.location.href = php_vars.site + "dashboard/add-article";
     }
 
   });
