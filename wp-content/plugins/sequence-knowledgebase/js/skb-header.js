@@ -1,4 +1,8 @@
-// alert('header');
+var spinner = '<img src="'+ php_vars.url + 'images/spinner.gif' +'" />';
+
+
+
+
 (function($){
 
 

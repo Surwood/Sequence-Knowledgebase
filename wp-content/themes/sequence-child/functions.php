@@ -31,7 +31,13 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 function my_theme_enqueue_scripts(){
 
+    wp_register_script('dashboard-js',content_url().'/themes/sequence-child/js/dashboard.js',array('jquery','jquery-ui-datepicker','skb-header-js'),1,true);
+
   wp_enqueue_script('jquery');
+  wp_enqueue_script('jquery-ui-datepicker');
+  wp_enqueue_script('dashboard-js');
+
+
 
   wp_enqueue_script(
     'rateyo-scripts',

@@ -6,10 +6,6 @@
 <?php
 // ||(!is_user_in_role('sequence_user') && !is_user_in_role('sequence_author') && !is_user_in_role('sequence_approver') && !is_user_in_role('sequence_admin'))
 
-// die(is_user_in_role('sequence_user') . 'tetete');
-// die('test');
-
-
 
 //we comment here for getting access in this page
 if(!is_user_logged_in()){
@@ -50,219 +46,17 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
       <button type="button"  class="btn controls home">home</button>
       <button type="button" style="<?php echo $add_article_button; ?>" class="btn controls add-article">add article</button>
 
+
+
+      <div id="sequence-search-results"></div>
+
+
 		<?php
-			if( $_POST['check_filter'] == '100134' ){
-
-          $search_filters = array();
-
-        global $wpdb;
-  $search_term = "";
-  $dateRange = "";
-  $closeBrac = "";
-
-  $cat = trim($_POST['postCategories1']);
-  $tag1 = trim($_POST['postCategories2']);
-  $tag2 = trim($_POST['postCategories3']);
-  $tag3 = trim($_POST['postCategories4']);
-  $item = trim($_POST['look']);
-  $dateBefore = trim($_POST['dateBefore']);
-  $dateAfter = trim($_POST['dateAfter']);
-
-        //building search query depending on several conditions.
-        $search_sql = "SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
-        FROM ". $wpdb->posts ." p
-        LEFT JOIN ".$wpdb->terms." r ON (p.ID = r.object_id)
-        LEFT JOIN ".$wpdb->postmeta." m ON ( p.ID = m.post_id )
-        WHERE 1=1 ";
-        if(!empty($dateAfter) && !empty($dateBefore) ) {
-
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
-            $search_filters['after'] = $dateAfter;
-            $search_filters['before'] = $dateBefore;
-            $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date >= '$dateAfter' AND p.post_date <= '$dateBefore' ))";
-
-        }elseif(empty($dateAfter) && !empty($dateBefore)){
-
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
-            // $search_filters['after'] = $dateAfter;
-            $search_filters['before'] = $dateBefore;
-            $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date <= '$dateBefore' ))";
-
-        }elseif(!empty($dateAfter) && empty($dateBefore)){
-
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
-            $search_filters['after'] = $dateAfter;
-            // $search_filters['before'] = $dateBefore;
-            $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date >= '$dateAfter' ))";
-
-        }else{
-            // Do Nothing
-        }
-        $search_sql .=$dateRange;
-
-        if( $cat!= -1 || $tag1!= -1 || $tag2!= -1 || $tag3!= -1 ) {
-            $search_sql .= "
-            AND(
-            r.term_taxonomy_id IN ($cat)
-            OR r.term_taxonomy_id IN ($tag1)
-            OR r.term_taxonomy_id IN ($tag2)
-            OR r.term_taxonomy_id IN ($tag3)
-            )";
-            if($cat != -1){
-              $search_filters['cat'] = $cat;
-            }
-            if($tag1 != -1){
-              $search_filters['tag1'] = $tag1;
-            }
-            if($tag2 != -1){
-              $search_filters['tag2'] = $tag2;
-            }
-            if($tag3 != -1){
-              $search_filters['tag3'] = $tag3;
-            }
-
-        }
-        if(!empty($item)) {
-            $search_sql .= "
-            AND ((
-            (p.post_title LIKE '%$item%')
-            OR (p.post_excerpt LIKE '%$item%')
-            OR (p.post_content LIKE '%$item%')
-            ))";
-            $search_filters['string'] = $item;
-        }
-        $search_sql .="
-        $closeBrac
-        AND p.post_type = 'skb_article'
-        AND ((p.post_status = 'publish'))
-        GROUP BY p.ID
-        ORDER BY p.post_date DESC
-        "; // LIMIT 0, 50   [no limit has no problem]
-
-        $pageposts = $wpdb->get_results($search_sql,OBJECT);
-
-        require_once SKB_PLUGIN_PATH . "models/Search.php";
-
-        $search = new Article_Search($search_filters);
-
-        $post_ids = array();
-        foreach($search->get_results()->posts as $post){
-          $post_ids[] = $post->ID;
-        }
-
-        $search_sql = "
-          SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
-          FROM ". $wpdb->posts ." p
-          LEFT JOIN ".$wpdb->postmeta." m ON ( p.ID = m.post_id )
-          WHERE
-        ";
-
-        foreach($post_ids as $key => $post_id){
-          $post_ids[$key] = " p.ID = '" . $post_id . "' ";
-        }
-
-        if(count($post_ids) > 0){
-          $search_sql .= implode(' OR ',$post_ids);
-        } else {
-          $search_sql .= " 1=0 ";
-        }
-
-        $search_sql .= " GROUP BY p.ID ORDER BY p.post_date DESC ";
-
-        // var_dump($search->get_results()->posts);
-        // var_dump($post_ids);
-
-        $pageposts = $wpdb->get_results($search_sql);
-
-        // die($search_sql);
-
-        // $pagePosts = $search->get_results();
-
-        // die($search_sql);
-        //testfadfa;fa
-        //afjkdj;lvk
-
-            if ($pageposts):
-                $allPosts = array();
-                ?>
-
-                <div class="row">
-                    <div class="col-sm-4 text-center"><h2>Title</h2></div>
-                    <div class="col-sm-4 text-center"><h2>Summary</h2></div>
-                    <div class="col-sm-2 text-center"><h2>Rating</h2></div>
-                    <div class="col-sm-1 text-center" style="padding: 0; text-align: left;"><h2>Views</h2></div>
-                    <div class="col-sm-1 text-center"><h2>Date</h2></div>
-                </div>
-
-
-                <?php
-                global $post;
-                foreach ($pageposts as $key=>$post):
-                    //setting up object date in [$allPosts] array. We need only 6 property of object
-                    $allPosts[$key]['ID'] =$post->ID;
-                    $allPosts[$key]['post_title'] =$post->post_title;
-                    $allPosts[$key]['post_excerpt'] =$post->post_excerpt;
-                    $avg_rating = 0;
-                    $ratings = get_post_meta(get_the_ID(),'article_rating');
-                    $total_ratings = count($ratings);
-                    $ratings_total = 0;
-                    if($total_ratings > 0){
-                      foreach($ratings as $value){
-                        list($user_id,$rating) = explode('_',$value);
-                        $ratings_total += $rating;
-                      }
-                      $avg_rating = round($ratings_total / $total_ratings,1);
-                    }
-                    $allPosts[$key]['post_rate'] = $avg_rating;
-                    $allPosts[$key]['post_view'] =count(get_post_meta(get_the_ID(),'article_view'));
-                    $allPosts[$key]['post_date'] =date('n/d/Y', strtotime($post->post_date));
-
-                endforeach;
-                ?>
-                <?php
-
-                $sort_col = array();
-                //setting up sorting columns
-                foreach ($allPosts as $key=> $row) {
-                    $sort_col['post_rate'][$key] = $row['post_rate'];
-                    $sort_col['post_view'][$key] = $row['post_view'];
-                    $sort_col['post_date'][$key] = $row['post_date'];
-                }
-                //perform sorting with [array_multisort] first rating then view and then publish date
-                array_multisort( $sort_col['post_rate'], SORT_DESC ,$sort_col['post_view'],SORT_DESC , $sort_col['post_date'], SORT_DESC , $allPosts);
-
-                //print sorted posts.
-                foreach ($allPosts as $post){?>
-                    <div class="row margin_row">
-                    <div class="col-sm-4">
-                        <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
-                    </div>
-                    <div class="col-sm-4"><?php echo $post['post_excerpt'];?></div>
-                    <?php $rating = $post['post_rate']; ?>
-                    <div id="rank-stars-<?php echo $post['ID'];?>" class="col-sm-2 text-center ratingWrapper" data-rating="<?php echo $rating; ?>"> <?php echo $rating; ?> </div>
-                    <div class="col-sm-1 text-center"><?php echo $post['post_view'];?></div>
-                    <div class="col-sm-1 text-center"><?php echo $post['post_date']; ?></div>
-                    </div><?php
-                }
-                ?>
-
-            <?php else : ?>
-                <h2 class="center">Not Found</h2>
-                <p class="center">Sorry, but you are looking for something that isn't here.</p><button type="button" class="btn btn-secondary return-home"><?php _e('Home', 'framework') ?></button>
-            <?php endif;
-
-			}else{
 
 			 if (have_posts()) : while (have_posts()) : the_post();?>
 
 				<div id="main-content" class="full-width">
-					<h1><?php the_title(); ?></h1>
+					
 					<?php the_content(); ?>
 
 					<?php if(is_page('dashboard')){?>
@@ -278,40 +72,38 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 			<?php endif; ?>
 
 
-				<?php
-			}
-		?>
+
 		</div>
 
 
     <?php if(is_page('dashboard')){?>
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 search_sidebar">
 
-  			<form role="filter" action="<?php echo site_url('/dashboard'); ?>" method="POST" id="filter">
 
   			<div>
   				<label class="screen-reader-text" for="look"><h1>Search</h1></label>
           <?php //get_search_form(); ?>
-  				<input type="text" name="look" id="s" />
+  				<input class="sequence-filter-field" type="text" name="look" id="s" value="<?php if(isset($_POST['look'])){ echo $_POST['look']; }?>" />
+          <button class="btn btn-secondary sequence-filter-submit"><?php _e('Go', 'framework') ?></button>
   			</div>
-        <br />
-        <div id="dashboard-left-sidebar">
-
-            <button type="submit" value="Fileter" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
 
 
-        </div>
-  				<h1>Filters</h1>
+
+
+
+
   			<div class="">
   				<fieldset>
   					<label for="postCategories1"><?php _e('Category 1','framework')?></label>
   					  <br/>
   					  <?php
   					  $selected = 0;
+              //  if(isset($_POST['postCategories1'])){ echo $selected = $_POST['look']; }
   					  if (isset($_POST['postCategories1'])){ $selected = $_POST['postCategories1']; }
   						$args = array(
   						  'id'  =>  'postCategories1',
   						  'name'  =>  'postCategories1',
+                'class' =>  'sequence-filter-field',
   						  'show_option_none' => 'Choose an item...',
   						  'hide_empty' => 0,
   						  'post_type' =>  "skb_article",
@@ -333,6 +125,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   						$args = array(
   						  'id'  =>  'postCategories2',
   						  'name'  =>  'postCategories2',
+                'class' =>  'sequence-filter-field',
   						  'show_option_none' => 'Choose an item...',
   						  'hide_empty' => 0,
   						  'post_type' =>  "skb_article",
@@ -353,6 +146,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   						$args = array(
   						  'id'  =>  'postCategories3',
   						  'name'  =>  'postCategories3',
+                'class' =>  'sequence-filter-field',
   						  'show_option_none' => 'Choose an item...',
   						  'hide_empty' => 0,
   						  'post_type' =>  "skb_article",
@@ -374,6 +168,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
   						$args = array(
   						  'id'  =>  'postCategories4',
   						  'name'  =>  'postCategories4',
+                'class' =>  'sequence-filter-field',
   						  'show_option_none' => 'Choose an item...',
   						  'hide_empty' => 0,
   						  'post_type' =>  "skb_article",
@@ -387,23 +182,23 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
   			<div class="dateAfter">
   				<label for="dateAfter"><?php _e('Date After','framework')?></label><br/>
-  				<input type="date" name="dateAfter" />
+  				<input type="date" name="dateAfter" class="sequence-filter-field" value="<?php if(isset($_POST['dateAfter'])){ echo $_POST['dateAfter']; }?>" />
   			</div>
 
   			<div class="dateBefore">
   				<label for="postCategories4"><?php _e('Date Before','framework')?></label><br/>
-  				<input type="date" name="dateBefore" />
+  				<input type="date" name="dateBefore" class="sequence-filter-field" value="<?php if(isset($_POST['dateBefore'])){ echo $_POST['dateBefore']; }?>" />
   			</div>
 
   			<div class="">
   				<input type="hidden" name="check_filter" value="100134"/>
   				<!-- <input type="submit" value="Filter" id="" /> -->
-          <button type="submit" value="Fileter" class="btn btn-secondary"><?php _e('Submit', 'framework') ?></button>
+          <button class="btn btn-secondary sequence-filter-submit"><?php _e('Submit', 'framework') ?></button>
   			</div>
 
 
 
-  			</form>
+
 
   		</div>
     <?php }?>
@@ -436,36 +231,4 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 	</div>
 </div>
 
-
-<script>
-
-$('.controls').click(function(){
-
-  // $('#skb-dashboard-modal').modal();
-  // alert('');
-
-  if($(this).hasClass('home')){
-    window.location.href = "<?php echo site_url(); ?>/dashboard/";
-  } else {
-      window.location.href = "<?php echo site_url(); ?>/dashboard/add-article";
-  }
-
-
-
-});
-
-// RATING
-jQuery(function($){
-	$('.ratingWrapper').each(function(event){
-		var id = '#'+$(this).attr('id');
-		var rating = $(this).attr('data-rating');
-		// console.log('id : '+id+' == rating : '+rating);
-
-		$(id).rateYo({ rating: rating, starWidth: "20px", readOnly: true });
-
-	});
-	// var my_rating = "<?php //echo $rating; ?>";
-	// $('#rank-stars-62').rateYo({ rating: my_rating });
-})
-</script>
 <?php get_footer(); ?>
