@@ -54,7 +54,7 @@ if ($pageposts):
 
     //print sorted posts.
     $i=0;
-    foreach ($allPosts as $post){ $i++; if(isset($_POST['posts_per_page']){ if($i >= $_POST['posts_per_page']){ break; } })?>
+    foreach ($allPosts as $post){ $i++; ?>
         <div class="row">
           <div class="col-sm-3 text-left">
               <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
