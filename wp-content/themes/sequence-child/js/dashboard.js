@@ -26,16 +26,16 @@ jQuery(document).ready(function($){
       }
     );
   });
-  alert('test');
-  $('.controls').click(function(){
-
-    if($(this).hasClass('home')){
-      alert(php_vars.site);
-      window.location.href = php_vars.site + "/dashboard/";
-    } else {
-        window.location.href = php_vars.site + "/dashboard/add-article";
-    }
-
-  });
+  // alert(php_vars.site);
+  // $('.controls').click(function(){
+  //
+  //   if($(this).hasClass('home')){
+  //     alert(php_vars.site);
+  //     window.location.href = php_vars.site + "/dashboard/";
+  //   } else {
+  //       window.location.href = php_vars.site + "/dashboard/add-article";
+  //   }
+  //
+  // });
 
 });
