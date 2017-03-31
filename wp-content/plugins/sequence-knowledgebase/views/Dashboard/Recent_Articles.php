@@ -1,5 +1,8 @@
 <?php
 
+
+
+
   if(count($pending_approval)>0){
     ?><hr /><h2>Pending Your Approval</h2><hr /><?php
     foreach($pending_approval as $post){
