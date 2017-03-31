@@ -48,7 +48,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 
-      <div id="sequence-search-results"></div>
+
 
 
 		<?php
@@ -79,6 +79,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 					<?php }?>
+
+          <div id="sequence-search-results"></div>
 
             <?php the_content(); ?>
 

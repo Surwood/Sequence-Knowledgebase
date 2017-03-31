@@ -229,7 +229,7 @@
   }
   add_shortcode('sequence_recent_articles','sequence_recent_articles');
 
-
+  add_shortcode('sequence_pending_articles','sequence_pending_articles');
   function sequence_pending_articles($atts){
 
     // $user = wp_get_current_user();
@@ -245,7 +245,7 @@
 
   }
 
-  add_shortcode('sequence_pending_articles','sequence_pending_articles');
+
 
 
   function sequence_view_article($atts){
