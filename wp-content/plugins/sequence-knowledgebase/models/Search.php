@@ -107,22 +107,25 @@
           $posts_per_page = $this->posts_per_page;
         }
 
-        $args = array(
-          'post_type' =>  "skb_article",
-          'post_status' =>  "publish",
-          's' =>  $string,
-          'tax_query' =>  $tax_query,
-          'date_query'  =>  $date_query,
-          'posts_per_page'  =>  $posts_per_page
-        );
+        $author = false;
 
         if(isset($this->user)){
-          $args['author__in'] = array($this->user);
+          $author = $this->user;
         }
 
-        
 
-        $article_query = new WP_Query($args);
+
+        $article_query = new WP_Query(
+          array(
+            'post_type' =>  "skb_article",
+            'post_status' =>  "publish",
+            's' =>  $string,
+            'tax_query' =>  $tax_query,
+            'date_query'  =>  $date_query,
+            'posts_per_page'  =>  $posts_per_page,
+            'author' =>  $author
+          )
+        );
 
         // var_dump($this);
         return $article_query;
