@@ -1,14 +1,4 @@
 
-// jQuery(function($){
-  jQuery('.return-home').click(function(){
-    // alert('test');
-    window.location.href = php_vars.site + "/dashboard/";
-  });
-
-  jQuery('.add-article').click(function(){
-    // alert('test');
-    window.location.href = php_vars.site + "/dashboard/add-article/";
-  });
 
 
   jQuery(document).ready(function($){
@@ -17,7 +7,16 @@
 
 
 
+    // jQuery(function($){
+      jQuery('.return-home').click(function(){
+        // alert('test');
+        window.location.href = php_vars.site + "/dashboard/";
+      });
 
+      jQuery('#add-article-button').click(function(){
+        // alert('test');
+        window.location.href = php_vars.site + "/dashboard/add-article/";
+      });
 
 
     $('.sequence-filter-field').change(function(){
