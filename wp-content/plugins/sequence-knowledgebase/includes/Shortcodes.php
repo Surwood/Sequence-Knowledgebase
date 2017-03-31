@@ -1,5 +1,6 @@
 <?php
 
+  add_shortcode('sequence_add_article','sequence_add_article');
   function sequence_add_article($atts){
 
 
@@ -162,9 +163,9 @@
     include SKB_PLUGIN_PATH . "views/Dashboard/Add_Article.php";
   }
 
-  add_shortcode('sequence_add_article','sequence_add_article');
 
 
+    add_shortcode('sequence_recent_articles','sequence_recent_articles');
   function sequence_recent_articles($atts){
 
     $user = wp_get_current_user();
@@ -227,12 +228,38 @@
 
 
   }
-  add_shortcode('sequence_recent_articles','sequence_recent_articles');
+
 
   add_shortcode('sequence_pending_approval','sequence_pending_approval');
   function sequence_pending_approval($atts){
 
-    include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Approval.php";
+    global $wpdb;
+    $user = wp_get_current_user();
+    $pending_approval = array();
+    if(
+      in_array('sequence_approver',(array)$user->roles ) ||
+      in_array('sequence_admin',(array)$user->roles )
+    ){
+      $sql = "
+        SELECT posts.ID
+        FROM ". $wpdb->posts ." posts
+        JOIN ". $wpdb->postmeta ." meta ON posts.ID = meta.post_id
+        WHERE posts.post_type = 'skb_article'
+        AND posts.post_status = 'pending'
+        AND meta.meta_key = 'post_approver'
+        AND meta.meta_value = '". $user->ID ."'
+      ";
+      $pending_approval = $wpdb->get_results($sql);
+
+      if(count($pending_approval)>0){
+        $args = array('post_type'=>'skb_article','post__in'=>$pending_approval);
+        $query = new WP_Query($args);
+        include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Approval.php";
+      }
+
+    }
+
+
   }
 
   add_shortcode('sequence_featured_articles','sequence_featured_articles');
