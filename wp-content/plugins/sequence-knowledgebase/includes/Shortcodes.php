@@ -253,7 +253,7 @@
       in_array('sequence_admin',(array)$user->roles )
     ){
       $sql = "
-        SELECT posts.ID
+        SELECT *
         FROM ". $wpdb->posts ." posts
         JOIN ". $wpdb->postmeta ." meta ON posts.ID = meta.post_id
         WHERE posts.post_type = 'skb_article'
@@ -261,19 +261,26 @@
         AND meta.meta_key = 'post_approver'
         AND meta.meta_value = '". $user->ID ."'
       ";
-      $pending_approval = array();
-      $results = $wpdb->get_results($sql);
-      if(count($results > 0)){
-        foreach($results as $post_id){
-          $pending_approval[] = $post_id->ID;
-        }
-      }
+      // $pending_approval = array();
+      $pending_approval = $wpdb->get_results($sql);
+      // if(count($results > 0)){
+      //   foreach($results as $row){
+      //     $pending_approval[] = $row->ID;
+      //   }
+      // }
 
-      if(count($pending_approval)>0){
-        $args = array('post_type'=>'skb_article','post__in'=>$pending_approval);
-        $query = new WP_Query($args);
-        include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Approval.php";
-      }
+      // var_dump($pending_approval);
+
+      //
+      // if(count($pending_approval)>0){
+      //   $args = array('post_type'=>'skb_article');
+      //   $query = new WP_Query($args);
+      //
+      // }
+
+      include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Approval.php";
+
+
 
     }
 
