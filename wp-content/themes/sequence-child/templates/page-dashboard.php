@@ -59,7 +59,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 
-					<?php the_content(); ?>
+
 
 					<?php if(is_page('dashboard')){?>
 
@@ -79,6 +79,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 					<?php }?>
+
+            <?php the_content(); ?>
 
 				</div>
 				<?php endwhile; ?>
