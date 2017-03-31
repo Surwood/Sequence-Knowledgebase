@@ -8,7 +8,7 @@
       window.location.href = php_vars.site + "/dashboard/";
     });
 
-    $('.add-article').click(function(){
+    $('.add-article-button').click(function(){
       window.location.href = php_vars.site + "/dashboard/add-article/";
     });
 
