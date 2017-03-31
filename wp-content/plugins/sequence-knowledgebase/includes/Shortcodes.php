@@ -249,7 +249,13 @@
         AND meta.meta_key = 'post_approver'
         AND meta.meta_value = '". $user->ID ."'
       ";
-      $pending_approval = $wpdb->get_results($sql);
+      $pending_approval = array();
+      $results = $wpdb->get_results($sql);
+      if(count($results > 0)){
+        foreach($results as $post_id){
+          $pending_approval[] = $post_id->ID;
+        }
+      }
 
       if(count($pending_approval)>0){
         $args = array('post_type'=>'skb_article','post__in'=>$pending_approval);
@@ -304,7 +310,14 @@
         WHERE posts.post_type = 'skb_article'
         AND posts.post_author = '". $user->ID ."'
       ";
-      $user_articles = $wpdb->get_results($sql);
+      $user_articles = array();
+      $results = $wpdb->get_results($sql);
+      if(count($results > 0)){
+        foreach($results as $post_id){
+          $user_articles[] = $post_id->ID;
+        }
+      }
+      // var_dump($user_articles);
 
       if(count($user_articles)>0){
         $args = array('post_type'=>'skb_article','post__in'=>$user_articles);
