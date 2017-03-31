@@ -5,7 +5,7 @@
     window.location.href = php_vars.site + "/dashboard/";
   });
 
-  jQuery('#add-article').click(function(){
+  jQuery('.add-article').click(function(){
     // alert('test');
     window.location.href = php_vars.site + "/dashboard/add-article/";
   });
