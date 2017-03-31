@@ -27,15 +27,17 @@ jQuery(document).ready(function($){
     );
   });
   // alert(php_vars.site);
-  // $('.controls').click(function(){
-  //
-  //   if($(this).hasClass('home')){
-  //     alert(php_vars.site);
-  //     window.location.href = php_vars.site + "/dashboard/";
-  //   } else {
-  //       window.location.href = php_vars.site + "/dashboard/add-article";
-  //   }
-  //
-  // });
+  $('.home').click(function(e){
+
+    e.preventDefault();
+    alert(php_vars.site);
+    // if($(this).hasClass('home')){
+    //   alert(php_vars.site);
+    //   window.location.href = php_vars.site + "/dashboard/";
+    // } else {
+    //     window.location.href = php_vars.site + "/dashboard/add-article";
+    // }
+
+  });
 
 });
