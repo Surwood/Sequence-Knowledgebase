@@ -162,6 +162,15 @@
 
 
 
+
+  }
+
+  add_action( 'init', 'skb_article_support' );
+  function skb_article_support() {
+      $supports = array(
+        'custom-fields','excerpt','title','editor'
+      );
+       add_post_type_support( 'skb_article', $supports );
   }
 
   function custom_post_status(){
@@ -181,11 +190,8 @@
   require_once  SKB_PLUGIN_PATH . 'models/Email.php';
 
   add_action( 'init', 'my_add_excerpts_to_pages' );
-
   function my_add_excerpts_to_pages() {
-  
        add_post_type_support( 'page', 'excerpt' );
-
   }
 
   // if ( (current_user_can('sequence_author') || current_user_can('sequence_approver') || current_user_can('sequence_admin') || ) && !current_user_can('upload_files') )
