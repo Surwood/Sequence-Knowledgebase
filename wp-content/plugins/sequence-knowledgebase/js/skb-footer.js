@@ -8,7 +8,7 @@
       window.location.href = php_vars.site + "/dashboard/";
     });
 
-    $('.add-article-button').click(function(){
+    $('.add-article-button-snoogens').click(function(){
       alert('test');
       window.location.href = php_vars.site + "/dashboard/add-article/";
     });
