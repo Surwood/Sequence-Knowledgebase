@@ -2,9 +2,17 @@
   jQuery(document).ready(function($){
 
     $('#footer').hide();
+
+
     $('.return-home').click(function(){
       window.location.href = php_vars.site + "/dashboard/";
     });
+
+    $('.add-article').click(function(){
+      window.location.href = php_vars.site + "/dashboard/add-article/";
+    });
+
+
 
     $('.sequence-filter-field').change(function(){
       $('#sequence-search-results').html(spinner);
