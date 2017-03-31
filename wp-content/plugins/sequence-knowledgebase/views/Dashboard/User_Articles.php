@@ -2,7 +2,7 @@
 
   <hr />
 
-    <h3>Articles Pending Your Approval</h3>
+    <h3>Your Articles</h3>
 
   <hr />
 
