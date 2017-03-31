@@ -229,21 +229,24 @@
   }
   add_shortcode('sequence_recent_articles','sequence_recent_articles');
 
-  add_shortcode('sequence_pending_articles','sequence_pending_articles');
-  function sequence_pending_articles($atts){
+  add_shortcode('sequence_pending_approval','sequence_pending_approval');
+  function sequence_pending_approval($atts){
 
-    // $user = wp_get_current_user();
-    // if(in_array('sequence_approver',$user->roles)){
-    //   $args = array('post_type'=>'skb_article');
-    //   $query = new WP_Query($args);
-    //
-    //   // include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Articles.php";
-    // }
-
-
-
-
+    include SKB_PLUGIN_PATH . "views/Dashboard/Pending_Approval.php";
   }
+
+  add_shortcode('sequence_featured_articles','sequence_featured_articles');
+  function sequence_featured_articles($atts){
+
+    include SKB_PLUGIN_PATH . "views/Dashboard/Featured_Articles.php";
+  }
+
+  add_shortcode('sequence_user_articles','sequence_user_articles');
+  function sequence_user_articles($atts){
+
+    include SKB_PLUGIN_PATH . "views/Dashboard/User_Articles.php";
+  }
+
 
 
 
