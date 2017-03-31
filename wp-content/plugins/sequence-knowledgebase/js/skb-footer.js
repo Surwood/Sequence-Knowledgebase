@@ -13,6 +13,10 @@
       window.location.href = php_vars.site + "/dashboard/add-article/";
     });
 
+    $('.some-other-button-test').click(function(){
+      alert('test');
+    });
+
 
 
     $('.sequence-filter-field').change(function(){

@@ -44,6 +44,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 	<div class="row">
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
       <button type="button"  class="btn return-home">home</button>
+      <button type="button"  class="btn some-other-button-test">test</button>
+
       <button type="button" style="<?php echo $add_article_button; ?>" id="add-article-button-snoogens" class="btn add-article-button-snoogens">add article</button>
 
 
