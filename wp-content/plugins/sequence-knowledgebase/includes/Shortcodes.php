@@ -217,12 +217,10 @@
 
 
 
+    echo "TEST";
 
 
-    $args = array('post_type'=>'skb_article','posts_per_page'=>'5');
-    $query = new WP_Query($args);
-
-    include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
+    //include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
 
 
 

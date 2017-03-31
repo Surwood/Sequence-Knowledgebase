@@ -31,7 +31,10 @@
 
 
 <div id="sequence_recent_articles">
-
+  <?php
+      $args = array('post_type'=>'skb_article','posts_per_page'=>'5');
+      $query = new WP_Query($args);
+  ?>
   <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
     <div class="full-width">
       <a href="<?php echo site_url() . "/dashboard/view-article/?article=" . get_the_ID(); ?>">
