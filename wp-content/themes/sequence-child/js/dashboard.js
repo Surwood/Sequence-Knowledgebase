@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
       }
     );
   });
-
+  alert('test');
   $('.controls').click(function(){
 
     if($(this).hasClass('home')){
