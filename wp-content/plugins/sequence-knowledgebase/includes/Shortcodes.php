@@ -24,6 +24,8 @@
       exit;
     }
 
+    $submit_test = false;
+
     if ( isset( $_POST['submitted'] ) && isset( $_POST['post_nonce_field'] ) && wp_verify_nonce( $_POST['post_nonce_field'], 'post_nonce' ) ) {
 
         if ( trim( $_POST['postTitle'] ) === '' ) {
@@ -132,7 +134,10 @@
           $email->send("request");
         }
 
-        echo "<script>jQuery('#skb-dashboard-modal').modal();</script>";
+
+        $submit_test = true;
+
+
 
     } else {
       if(isset($_REQUEST['article'])){
@@ -160,9 +165,14 @@
 
     $user = wp_get_current_user();
 
+    if($submit_test){
+      include SKB_PLUGIN_PATH . 'views/Tools/Launch_Modal.php';
+    } else {
+      include SKB_PLUGIN_PATH . "views/Dashboard/Add_Article.php";
+    }
 
+  //
 
-    include SKB_PLUGIN_PATH . "views/Dashboard/Add_Article.php";
   }
 
 

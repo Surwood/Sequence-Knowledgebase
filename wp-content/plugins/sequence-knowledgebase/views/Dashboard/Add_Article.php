@@ -299,6 +299,7 @@
       if($(this).hasClass('submit-article')){
           $('#primaryPostForm').submit();
           // alert('test');
+          
       }
 
       if($(this).hasClass('cancel-article')){
@@ -316,7 +317,7 @@
 
 
       // skb-dashboard-modal
-      
+
 
     });
 
