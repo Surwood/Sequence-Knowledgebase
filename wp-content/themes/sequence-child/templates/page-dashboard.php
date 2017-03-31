@@ -68,8 +68,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
               <div class="col-md-12">
 
-                <h1><?php the_title(); ?></h1>
-                <p><?php the_excerpt(); ?></p>
+                <h1 style="font-size: 24pt;"><?php the_title(); ?></h1>
+                <strong><?php the_excerpt(); ?></strong>
 
               </div>
 
