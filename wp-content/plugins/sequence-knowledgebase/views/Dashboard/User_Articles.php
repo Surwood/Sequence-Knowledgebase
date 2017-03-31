@@ -1,4 +1,4 @@
-<div id="sequence-pending-approval">
+<div id="sequence-user-articles">
 
   <hr />
 
