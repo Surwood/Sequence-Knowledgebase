@@ -53,9 +53,11 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 		<?php
 
+    <div id="main-content" class="full-width">
+
 			 if (have_posts()) : while (have_posts()) : the_post();?>
 
-				<div id="main-content" class="full-width">
+
 
 					<?php the_content(); ?>
 
@@ -63,8 +65,9 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 					<?php }?>
 
-				</div>
+
 				<?php endwhile; ?>
+        </div>
 				<?php else : ?>
 				<div id="main-content">
 					<h2>Not Found</h2>
