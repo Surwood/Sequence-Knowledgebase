@@ -34,6 +34,8 @@
         $dateBefore = trim($_POST['dateBefore']);
         $dateAfter = trim($_POST['dateAfter']);
 
+        // var_dump($dateAfter);
+
         //building search query depending on several conditions.
         $search_sql = "SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
         FROM ". $wpdb->posts ." p
@@ -122,6 +124,8 @@
           $post_ids[] = $post->ID;
         }
 
+        // var_dump
+
         $search_sql = "
           SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
           FROM ". $wpdb->posts ." p
@@ -140,6 +144,10 @@
         }
 
         $search_sql .= " GROUP BY p.ID ORDER BY p.post_date DESC ";
+
+        // var_dump($search->get_results()->query);
+        // var_dump($post_ids);
+
         $pageposts = $wpdb->get_results($search_sql);
 
       include SKB_PLUGIN_PATH . 'views/Dashboard/Search_Results.php';

@@ -112,7 +112,7 @@
           )
         );
 
-
+        // var_dump($this);
         return $article_query;
 
     }

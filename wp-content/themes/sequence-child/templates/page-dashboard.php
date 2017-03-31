@@ -182,12 +182,12 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
   			<div class="dateAfter">
   				<label for="dateAfter"><?php _e('Date After','framework')?></label><br/>
-  				<input type="date" name="dateAfter" class="sequence-filter-field" value="<?php if(isset($_POST['dateAfter'])){ echo $_POST['dateAfter']; }?>" />
+  				<input type="date" id="dateAfter" name="dateAfter" class="sequence-filter-field" value="<?php if(isset($_POST['dateAfter'])){ echo $_POST['dateAfter']; }?>" />
   			</div>
 
   			<div class="dateBefore">
   				<label for="postCategories4"><?php _e('Date Before','framework')?></label><br/>
-  				<input type="date" name="dateBefore" class="sequence-filter-field" value="<?php if(isset($_POST['dateBefore'])){ echo $_POST['dateBefore']; }?>" />
+  				<input type="date" id="dateBefore" name="dateBefore" class="sequence-filter-field" value="<?php if(isset($_POST['dateBefore'])){ echo $_POST['dateBefore']; }?>" />
   			</div>
 
   			<div class="">
