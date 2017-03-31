@@ -58,11 +58,11 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 			 if (have_posts()) : while (have_posts()) : the_post();?>
 
        <?php if(is_page('dashboard')){?>
-         <?php the_title(); ?>
-         <?php the_excerpt(); ?>
+
 
        <?php }?>
-
+       <?php the_title(); ?>
+       <?php the_excerpt(); ?>
 					<?php the_content(); ?>
 
 
