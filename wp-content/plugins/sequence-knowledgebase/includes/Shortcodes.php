@@ -264,8 +264,27 @@
 
   add_shortcode('sequence_featured_articles','sequence_featured_articles');
   function sequence_featured_articles($atts){
+    require_once SKB_PLUGIN_PATH . "models/Search.php";
 
-    include SKB_PLUGIN_PATH . "views/Dashboard/Featured_Articles.php";
+    // look: $('#s').val(),
+    // postCategories1: $('#postCategories1').val(),
+    // postCategories2: $('#postCategories2').val(),
+    // postCategories3: $('#postCategories3').val(),
+    // postCategories4: $('#postCategories4').val(),
+    // dateAfter: $('#dateAfter').val(),
+    // dateBefore: $('#dateBefore').val()
+
+
+
+    // $featured_articles = new WP_Query(
+    //   array(
+    //     'post_type' =>  "skb_article",
+    //     'post_status' =>  "publish",
+    //     'posts_per_page'  =>  3
+    //   )
+    // );
+    //
+    // include SKB_PLUGIN_PATH . "views/Dashboard/Featured_Articles.php";
   }
 
   add_shortcode('sequence_user_articles','sequence_user_articles');
