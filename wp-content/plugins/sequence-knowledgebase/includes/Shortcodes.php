@@ -219,10 +219,10 @@
 
     // return "TEST";
 
-    
 
 
-    include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
+
+  //  include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
 
 
 

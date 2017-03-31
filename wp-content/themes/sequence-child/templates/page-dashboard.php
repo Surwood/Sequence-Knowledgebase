@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Dashboard New
+ * Template Name: Dashboard
  */
  ?>
 <?php
@@ -53,31 +53,39 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 		<?php
 
-    <div id="main-content" class="full-width">
-
 			 if (have_posts()) : while (have_posts()) : the_post();?>
 
-       <?php if(is_page('dashboard')){?>
+				<div id="main-content" class="full-width">
 
 
-       <?php }?>
-       <?php the_title(); ?>
-       <?php the_excerpt(); ?>
+
 					<?php the_content(); ?>
 
+					<?php if(is_page('dashboard')){?>
+
+
+            <div class="row">
+
+              <div class="col-md-12">
+
+                <h1><?php the_title(); ?></h1>
+                <p><?php the_excerpt(); ?></p>
+
+              </div>
+
+            </div>
 
 
 
+
+					<?php }?>
+
+				</div>
 				<?php endwhile; ?>
-
-    </div>
-
 				<?php else : ?>
-
 				<div id="main-content">
 					<h2>Not Found</h2>
 				</div>
-
 			<?php endif; ?>
 
 
