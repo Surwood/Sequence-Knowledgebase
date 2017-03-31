@@ -132,6 +132,8 @@
           $email->send("request");
         }
 
+        echo "<script>jQuery('#skb-dashboard-modal').modal();</script>";
+
     } else {
       if(isset($_REQUEST['article'])){
         $article_id = $_REQUEST['article'];
