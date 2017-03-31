@@ -2,7 +2,7 @@
 
   class Article_Search {
 
-    var $string,$cat,$tag1,$tag2,$tag3,$after,$before;
+    var $string,$cat,$tag1,$tag2,$tag3,$after,$before,$posts_per_page,$user;
 
     function __construct($args){
 
@@ -101,16 +101,28 @@
           );
         }
 
+        if(!isset($this->posts_per_page)){
+          $posts_per_page = 100;
+        } else {
+          $posts_per_page = $this->posts_per_page;
+        }
 
-        $article_query = new WP_Query(
-          array(
-            'post_type' =>  "skb_article",
-            'post_status' =>  "publish",
-            's' =>  $string,
-            'tax_query' =>  $tax_query,
-            'date_query'  =>  $date_query
-          )
+        $args = array(
+          'post_type' =>  "skb_article",
+          'post_status' =>  "publish",
+          's' =>  $string,
+          'tax_query' =>  $tax_query,
+          'date_query'  =>  $date_query,
+          'posts_per_page'  =>  $posts_per_page
         );
+
+        if(isset($this->user)){
+          $args['author__in'] = array($this->user);
+        }
+
+        
+
+        $article_query = new WP_Query($args);
 
         // var_dump($this);
         return $article_query;

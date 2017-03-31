@@ -78,20 +78,20 @@ if ($pageposts):
 
  <script>
 
- jQuery(document).ready(function($){
+ // jQuery(document).ready(function($){
 
 
-   $('.ratingWrapper').each(function(event){
- 		var id = '#'+$(this).attr('id');
- 		var rating = $(this).attr('data-rating');
+   jQuery('.ratingWrapper').each(function(event){
+ 		var id = '#'+jQuery(this).attr('id');
+ 		var rating = jQuery(this).attr('data-rating');
  		// console.log('id : '+id+' == rating : '+rating);
 
- 		$(id).rateYo({ rating: rating, starWidth: "20px", readOnly: true });
+ 		jQuery(id).rateYo({ rating: rating, starWidth: "20px", readOnly: true });
 
  	});
 
 
- });
+ // });
 
 
  </script>

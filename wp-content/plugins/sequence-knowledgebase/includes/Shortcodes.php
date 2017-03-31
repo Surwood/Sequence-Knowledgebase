@@ -270,7 +270,7 @@
 
   add_shortcode('sequence_featured_articles','sequence_featured_articles');
   function sequence_featured_articles($atts){
-    require_once SKB_PLUGIN_PATH . "models/Search.php";
+    // require_once SKB_PLUGIN_PATH . "models/Search.php";
 
     // look: $('#s').val(),
     // postCategories1: $('#postCategories1').val(),
@@ -290,7 +290,7 @@
     //   )
     // );
     //
-    // include SKB_PLUGIN_PATH . "views/Dashboard/Featured_Articles.php";
+    include SKB_PLUGIN_PATH . "views/Dashboard/Featured_Articles.php";
   }
 
   add_shortcode('sequence_user_articles','sequence_user_articles');

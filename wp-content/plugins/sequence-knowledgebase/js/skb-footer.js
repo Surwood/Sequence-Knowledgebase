@@ -9,6 +9,7 @@
     });
 
     $('.add-article-button').click(function(){
+      alert('test');
       window.location.href = php_vars.site + "/dashboard/add-article/";
     });
 

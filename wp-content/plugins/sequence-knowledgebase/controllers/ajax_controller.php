@@ -19,6 +19,8 @@
 
     function get_search_results(){
 
+        $user = get_current_user();
+
         $search_filters = array();
 
         global $wpdb;
@@ -116,6 +118,10 @@
         $pageposts = $wpdb->get_results($search_sql,OBJECT);
 
         require_once SKB_PLUGIN_PATH . "models/Search.php";
+
+        if(isset($_POST['user'])){
+          $search_filters['user'] = $user->ID;
+        }
 
         $search = new Article_Search($search_filters);
 
