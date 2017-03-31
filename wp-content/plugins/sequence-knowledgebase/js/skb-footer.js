@@ -1,19 +1,14 @@
 
-jQuery(function($){
-  $('.return-home').click(function(){
-    alert('test');
-    // window.location.href = php_vars.site + "/dashboard/";
+// jQuery(function($){
+  jQuery('.return-home').click(function(){
+    // alert('test');
+    window.location.href = php_vars.site + "/dashboard/";
   });
 
-  $('#add-article-button-snoogens').click(function(){
-    alert('test');
+  jQuery('#add-article').click(function(){
+    // alert('test');
     window.location.href = php_vars.site + "/dashboard/add-article/";
   });
-
-  $('.some-other-button-test').click(function(){
-    alert('test');
-  });
-})
 
 
   jQuery(document).ready(function($){
