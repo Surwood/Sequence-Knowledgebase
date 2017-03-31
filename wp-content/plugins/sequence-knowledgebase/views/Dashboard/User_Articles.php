@@ -6,7 +6,7 @@
 
   <hr />
 
-    <div class="article-results"></div>
+    <div class="user-article-results"></div>
 
 
   <hr />
@@ -33,7 +33,7 @@
       },
       function(data){
         // alert('test');
-        $('#sequence-user-articles .article-results').html(data);
+        $('#sequence-user-articles .user-article-results').html(data);
       }
 
 
