@@ -54,7 +54,11 @@ if ($pageposts):
 
     //print sorted posts.
     $i=0;
-    foreach ($allPosts as $post){ $i++; ?>
+    foreach ($allPosts as $post){
+      $i++;
+      if(isset($_POST['posts_per_page']) && ($i > $_POST['posts_per_page'])){ break; }
+
+      ?>
         <div class="row">
           <div class="col-sm-3 text-left">
               <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
@@ -64,7 +68,9 @@ if ($pageposts):
           <div id="rank-stars-<?php echo $post['ID'];?>" class="col-sm-2 text-left ratingWrapper" data-rating="<?php echo $rating; ?>"> <?php echo $rating; ?> </div>
           <div class="col-sm-1 text-right"><?php echo $post['post_view'];?></div>
           <div class="col-sm-2 text-right"><?php echo $post['post_date']; ?></div>
-        </div><?php
+        </div>
+
+      <?php
     }
     ?>
 
