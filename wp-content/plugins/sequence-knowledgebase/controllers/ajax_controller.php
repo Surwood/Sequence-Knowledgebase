@@ -120,7 +120,7 @@
         require_once SKB_PLUGIN_PATH . "models/Search.php";
 
         if(isset($_POST['user'])){
-          $search_filters['user'] = $user->ID;
+          $search_filters['user'] = get_current_user_id();
         }
 
         if(isset($_POST['posts_per_page'])){
