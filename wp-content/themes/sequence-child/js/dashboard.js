@@ -27,10 +27,10 @@ jQuery(document).ready(function($){
     );
   });
   // alert(php_vars.site);
-  $('.home').click(function(e){
+  // $('.home').click(function(e){
 
-    e.preventDefault();
-    alert(php_vars.site);
+    // e.preventDefault();
+    // alert(php_vars.site);
     // if($(this).hasClass('home')){
     //   alert(php_vars.site);
     //   window.location.href = php_vars.site + "/dashboard/";
@@ -38,6 +38,6 @@ jQuery(document).ready(function($){
     //     window.location.href = php_vars.site + "/dashboard/add-article";
     // }
 
-  });
+  // });
 
 });
