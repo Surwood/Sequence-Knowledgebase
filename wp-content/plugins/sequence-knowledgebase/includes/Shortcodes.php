@@ -270,8 +270,31 @@
 
   add_shortcode('sequence_user_articles','sequence_user_articles');
   function sequence_user_articles($atts){
+    global $wpdb;
+    $user = wp_get_current_user();
+    $pending_approval = array();
+    if(
+      in_array('sequence_approver',(array)$user->roles ) ||
+      in_array('sequence_admin',(array)$user->roles ) ||
+      in_array('sequence_author',(array)$user->roles )
 
-    include SKB_PLUGIN_PATH . "views/Dashboard/User_Articles.php";
+    ){
+      $sql = "
+        SELECT posts.ID
+        FROM ". $wpdb->posts ." posts
+        WHERE posts.post_type = 'skb_article'
+        AND posts.post_author = '". $user->ID ."'
+      ";
+      $user_articles = $wpdb->get_results($sql);
+
+      if(count($user_articles)>0){
+        $args = array('post_type'=>'skb_article','post__in'=>$user_articles);
+        $query = new WP_Query($args);
+        include SKB_PLUGIN_PATH . "views/Dashboard/User_Articles.php";
+      }
+
+    }
+    // include SKB_PLUGIN_PATH . "views/Dashboard/User_Articles.php";
   }
 
 
