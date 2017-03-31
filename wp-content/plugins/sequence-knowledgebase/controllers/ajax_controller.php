@@ -123,6 +123,12 @@
           $search_filters['user'] = $user->ID;
         }
 
+        if(isset($_POST['posts_per_page'])){
+          $search_filters['posts_per_page'] = $_POST['posts_per_page'];
+        }
+
+
+
         $search = new Article_Search($search_filters);
 
         $post_ids = array();
