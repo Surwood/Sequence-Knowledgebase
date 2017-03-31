@@ -248,7 +248,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 				</div>
 			</div>
 			<div class="modal-body">
-
+        Form submitted successfully.
 			</div>
 		</div>
 	</div>
