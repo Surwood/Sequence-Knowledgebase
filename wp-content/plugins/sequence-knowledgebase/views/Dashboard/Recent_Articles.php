@@ -33,7 +33,7 @@
 <div id="sequence_recent_articles">
 
   <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-    <div id="main-content" class="full-width">
+    <div class="full-width">
       <a href="<?php echo site_url() . "/dashboard/view-article/?article=" . get_the_ID(); ?>">
       <h1><?php the_title(); ?></h1>
 

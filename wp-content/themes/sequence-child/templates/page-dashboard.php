@@ -67,11 +67,15 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 				<?php endwhile; ?>
-        </div>
+
+    </div>
+
 				<?php else : ?>
+
 				<div id="main-content">
 					<h2>Not Found</h2>
 				</div>
+
 			<?php endif; ?>
 
 
