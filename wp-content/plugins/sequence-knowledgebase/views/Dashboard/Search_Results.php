@@ -53,7 +53,8 @@ if ($pageposts):
     array_multisort( $sort_col['post_rate'], SORT_DESC ,$sort_col['post_view'],SORT_DESC , $sort_col['post_date'], SORT_DESC , $allPosts);
 
     //print sorted posts.
-    foreach ($allPosts as $post){?>
+    $i=0;
+    foreach ($allPosts as $post){ $i++; if(isset($_POST['posts_per_page']){ if($i >= $_POST['posts_per_page']){ break; } })?>
         <div class="row">
           <div class="col-sm-3 text-left">
               <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
