@@ -8,8 +8,8 @@ if ($pageposts):
 
 
     <div class="row">
-        <div class="col-sm-3 text-center"><h2>Title</h2></div>
-        <div class="col-sm-4 text-center"><h2>Summary</h2></div>
+        <div class="col-sm-7 text-center"><h2>Title</h2></div>
+        <!-- <div class="col-sm-4 text-center"><h2>Summary</h2></div> -->
         <div class="col-sm-2 text-center"><h2>Rating</h2></div>
         <div class="col-sm-1 text-center"><h2>Views</h2></div>
         <div class="col-sm-2 text-center"><h2>Date</h2></div>
@@ -60,10 +60,10 @@ if ($pageposts):
 
       ?>
         <div class="row">
-          <div class="col-sm-3 text-left">
+          <div class="col-sm-7 text-left">
               <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
           </div>
-          <div class="col-sm-4 text-left"><?php echo $post['post_excerpt'];?></div>
+          <!-- <div class="col-sm-4 text-left"><?php echo $post['post_excerpt'];?></div> -->
           <?php $rating = $post['post_rate']; ?>
           <div id="rank-stars-<?php echo $post['ID'];?>" class="col-sm-2 text-left ratingWrapper" data-rating="<?php echo $rating; ?>"> <?php echo $rating; ?> </div>
           <div class="col-sm-1 text-right"><?php echo $post['post_view'];?></div>

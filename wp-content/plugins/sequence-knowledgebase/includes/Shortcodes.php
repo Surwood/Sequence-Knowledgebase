@@ -354,6 +354,10 @@
 
   function sequence_view_article($atts){
 
+    $user = wp_get_current_user();
+
+    // var_dump($user);
+
     $article_id = $_REQUEST['article'];
     $article = get_post($article_id);
     $article->categories = get_the_terms($article_id,'article_category');

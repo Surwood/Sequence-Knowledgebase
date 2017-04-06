@@ -46,30 +46,37 @@
         WHERE 1=1 ";
         if(!empty($dateAfter) && !empty($dateBefore) ) {
 
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
+            $dateAfter = $dateAfter.' 23:59:59';
+            $dateBefore = $dateBefore.' 00:00:00';
+
             $search_filters['after'] = $dateAfter;
             $search_filters['before'] = $dateBefore;
             $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date >= '$dateAfter' AND p.post_date <= '$dateBefore' ))";
+            $dateRange = "AND ((( p.post_date > '$dateAfter' AND p.post_date < '$dateBefore' ))";
 
         }elseif(empty($dateAfter) && !empty($dateBefore)){
 
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
+            // $dateAfter = $dateAfter.' 00:00:00';
+            // $dateBefore = $dateBefore.' 23:59:59';
+            $dateAfter = $dateAfter.' 23:59:59';
+            $dateBefore = $dateBefore.' 00:00:00';
+
             // $search_filters['after'] = $dateAfter;
             $search_filters['before'] = $dateBefore;
             $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date <= '$dateBefore' ))";
+            $dateRange = "AND ((( p.post_date < '$dateBefore' ))";
 
         }elseif(!empty($dateAfter) && empty($dateBefore)){
 
-            $dateAfter = $dateAfter.' 00:00:00';
-            $dateBefore = $dateBefore.' 23:59:59';
+            // $dateAfter = $dateAfter.' 00:00:00';
+            // $dateBefore = $dateBefore.' 23:59:59';
+            $dateAfter = $dateAfter.' 23:59:59';
+            $dateBefore = $dateBefore.' 00:00:00';
+
             $search_filters['after'] = $dateAfter;
             // $search_filters['before'] = $dateBefore;
             $closeBrac = ')';
-            $dateRange = "AND ((( p.post_date >= '$dateAfter' ))";
+            $dateRange = "AND ((( p.post_date > '$dateAfter' ))";
 
         }else{
             // Do Nothing
@@ -119,7 +126,7 @@
 
         require_once SKB_PLUGIN_PATH . "models/Search.php";
 
-        if(isset($_POST['user'])){
+        if(isset($_POST['user']) && ($_POST['user'] != 0)){
           $search_filters['user'] = get_current_user_id();
         }
 

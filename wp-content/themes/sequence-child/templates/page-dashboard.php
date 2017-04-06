@@ -6,11 +6,12 @@
 <?php
 // ||(!is_user_in_role('sequence_user') && !is_user_in_role('sequence_author') && !is_user_in_role('sequence_approver') && !is_user_in_role('sequence_admin'))
 
+  // $user = get_current_user()
 
 //we comment here for getting access in this page
-if(!is_user_logged_in()){
+if( !is_user_logged_in() || ( !current_user_can('sequence_user') && !current_user_can('sequence_author') && !current_user_can('sequence_admin') && !current_user_can('sequence_admin') ) ){
   wp_redirect(home_url('/login/'));
-  exit;
+  // exit('nooch');
 } else {
   $user = wp_get_current_user();
   if(

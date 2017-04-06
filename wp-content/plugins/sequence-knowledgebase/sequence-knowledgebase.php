@@ -5,7 +5,7 @@
     Plugin Name: Sequence Knowledgebase
     Plugin URI: http://www/scaryprankster.com/
     Description: Knowledgebase for Sequence users to add and manage articles.
-    Version: 1.0.5
+    Version: 1.2.1
     Author: Jay Long
 
 
@@ -31,6 +31,8 @@
     // validation
     wp_register_script( 'validation', 'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js', array( 'jquery' ) );
     wp_enqueue_script( 'validation' );
+
+
 
   }
 
@@ -73,7 +75,117 @@
 
   }
 
- require_once SKB_PLUGIN_PATH . 'includes/Shortcodes.php';
+  register_activation_hook(__FILE__,'add_roles_on_plugin_activation');
+
+  function add_roles_on_plugin_activation(){
+
+    $sequence_user = array(
+      'read' =>  true
+    );
+
+    if(!add_role('sequence_user', __( 'Sequence User' ), $sequence_user)){
+      remove_role('sequence_user');
+      add_role('sequence_user', __( 'Sequence User' ), $sequence_user);
+    }
+
+    $sequence_author = array(
+      // 'delete_others_pages' =>  true,
+      // 'delete_others_posts' =>  true,
+      // 'delete_pages' =>  true,
+      // 'delete_posts' =>  true,
+      // 'delete_private_pages' =>  true,
+      // 'delete_private_posts' =>  true,
+      // 'delete_published_pages' =>  true,
+      // 'delete_published_posts' =>  true,
+      // 'edit_others_pages' =>  true,
+      // 'edit_others_posts' =>  true,
+      'edit_published_pages' =>  true,
+      'edit_published_posts' =>  true,
+      // 'manage_categories' =>  true,
+      // 'manage_links' =>  true,
+      // 'moderate_comments' =>  true,
+      // 'publish_pages' =>  true,
+      // 'publish_posts' =>  true,
+      'read' =>  true,
+      // 'read_private_pages' =>  true,
+      // 'read_private_posts' =>  true,
+      'unfiltered_html' =>  true,
+      'upload_files' =>  true
+    );
+
+    if(!add_role('sequence_author', __( 'Sequence Author' ), $sequence_author)){
+      remove_role('sequence_author');
+      add_role('sequence_author', __( 'Sequence Author' ), $sequence_author);
+    }
+
+    $sequence_approver = array(
+      'delete_others_pages' =>  true,
+      'delete_others_posts' =>  true,
+      'delete_pages' =>  true,
+      'delete_posts' =>  true,
+      'delete_private_pages' =>  true,
+      'delete_private_posts' =>  true,
+      'delete_published_pages' =>  true,
+      'delete_published_posts' =>  true,
+      'edit_others_pages' =>  true,
+      'edit_others_posts' =>  true,
+      'edit_published_pages' =>  true,
+      'edit_published_posts' =>  true,
+      'manage_categories' =>  true,
+      'manage_links' =>  true,
+      'moderate_comments' =>  true,
+      'publish_pages' =>  true,
+      'publish_posts' =>  true,
+      'read' =>  true,
+      'read_private_pages' =>  true,
+      'read_private_posts' =>  true,
+      'unfiltered_html' =>  true,
+      'upload_files' =>  true
+    );
+
+    if(!add_role('sequence_approver', __( 'Sequence Approver' ), $sequence_approver)){
+      remove_role('sequence_approver');
+      add_role('sequence_approver', __( 'Sequence Approver' ), $sequence_approver);
+    }
+
+    $sequence_admin = array(
+      'delete_others_pages' =>  true,
+      'delete_others_posts' =>  true,
+      'delete_pages' =>  true,
+      'delete_posts' =>  true,
+      'delete_private_pages' =>  true,
+      'delete_private_posts' =>  true,
+      'delete_published_pages' =>  true,
+      'delete_published_posts' =>  true,
+      'edit_others_pages' =>  true,
+      'edit_others_posts' =>  true,
+      'edit_published_pages' =>  true,
+      'edit_published_posts' =>  true,
+      'manage_categories' =>  true,
+      'manage_links' =>  true,
+      'moderate_comments' =>  true,
+      'publish_pages' =>  true,
+      'publish_posts' =>  true,
+      'read' =>  true,
+      'read_private_pages' =>  true,
+      'read_private_posts' =>  true,
+      'unfiltered_html' =>  true,
+      'upload_files' =>  true
+    );
+
+    if(!add_role('sequence_admin', __( 'Sequence Admin' ), $sequence_admin)){
+      remove_role('sequence_admin');
+      add_role('sequence_admin', __( 'Sequence Admin' ), $sequence_admin);
+    }
+
+
+
+  }
+
+  require_once SKB_PLUGIN_PATH . 'includes/Roles.php';
+
+  require_once SKB_PLUGIN_PATH . 'includes/Shortcodes.php';
+
 
  // require_once SKB_PLUGIN_PATH . 'includes/Taxonomies.php';
 

@@ -166,12 +166,11 @@
     var path = "<?php echo SKB_PLUGIN_PATH; ?>";
     var article_id = "<?php echo $article->ID; ?>";
 
-    // alert('test');
     var my_rating = ('<?php echo $my_rating; ?>').split('_')[1];
-    // alert(my_rating);
 
     $('#rank-stars').rateYo({
-      rating: my_rating
+      rating: my_rating,
+      readOnly: '<?php  echo ($user->ID == $article->post_author); ?>'
     });
 
 
