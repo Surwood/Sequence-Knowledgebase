@@ -5,13 +5,15 @@
     Plugin Name: Sequence Knowledgebase
     Plugin URI: http://www/scaryprankster.com/
     Description: Knowledgebase for Sequence users to add and manage articles.
-    Version: 1.2.3
+    Version: 1.2.5
     Author: Jay Long
 
 
 */
 
-
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 
   //define plugin variables
   define('SKB_PLUGIN_URL', plugin_dir_url( __FILE__ ));
@@ -75,6 +77,8 @@
 
   }
 
+
+
   register_activation_hook(__FILE__,'add_roles_on_plugin_activation');
 
   function add_roles_on_plugin_activation(){
@@ -91,21 +95,21 @@
     $sequence_author = array(
       // 'delete_others_pages' =>  true,
       // 'delete_others_posts' =>  true,
-      // 'delete_pages' =>  true,
+      // 'delete_pages' =>  true, //
       // 'delete_posts' =>  true,
-      // 'delete_private_pages' =>  true,
+      // 'delete_private_pages' =>  true, //
       // 'delete_private_posts' =>  true,
-      // 'delete_published_pages' =>  true,
+      // 'delete_published_pages' =>  true, //
       // 'delete_published_posts' =>  true,
-      // 'edit_others_pages' =>  true,
-      // 'edit_others_posts' =>  true,
+      'edit_others_pages' =>  true,
+      'edit_others_posts' =>  true,
       'edit_published_pages' =>  true,
       'edit_published_posts' =>  true,
       // 'manage_categories' =>  true,
       // 'manage_links' =>  true,
       // 'moderate_comments' =>  true,
-      'publish_pages' =>  true,
-      'publish_posts' =>  true,
+      'publish_pages' =>  true, //
+      'publish_posts' =>  true, //
       'read' =>  true,
       // 'read_private_pages' =>  true,
       // 'read_private_posts' =>  true,
