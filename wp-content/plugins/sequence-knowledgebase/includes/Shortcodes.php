@@ -427,6 +427,11 @@
 
   function test_email_shortcode(){
 
+    $headers = "From: gsequence@sequenceqcs.com\r\n";
+    $headers .= "Reply-To: no-reply\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
     $message = '
     <html>
     <head>
@@ -610,7 +615,7 @@
     echo $message;
 
 
-    mail("jaylong255@gmail.com","html email test",$message);
+    mail("jaylong255@gmail.com","html email test",$message,$headers);
 
   }
 
