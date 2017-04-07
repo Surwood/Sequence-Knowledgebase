@@ -322,23 +322,26 @@
         $('#skb-dashboard-modal .modal-body span').hide();
         $('#skb-dashboard-modal .modal-body p').show();
 
+        $('.reject-article-go').click(function(){
+          $.post(url + 'controllers/ajax_controller.php?method=reject_article',
+            {
+              message: $('#reject-article-message').html(),
+              article_id: '<?php echo $article->ID; ?>'
+            },
+            function(data){
+              $('#skb-dashboard-modal .modal-body p').hide();
+              $('#skb-dashboard-modal .modal-body span').show();
+            }
+          );
+        });
+
       }
 
       if($(this).hasClass('reject-article-go')){
 
-        $.post(url + 'controllers/ajax_controller.php?method=reject_article',
-          {
-            message: $('#reject-article-message').html(),
-            article_id: '<?php echo $article->ID; ?>'
-          },
-          function(data){
-            // window.location.href = "<?php echo site_url(); ?>/dashboard/";
+        // alert('test');
 
-            $('#skb-dashboard-modal .modal-body p').hide();
-            $('#skb-dashboard-modal .modal-body span').show();
 
-          }
-        );
 
       }
 
