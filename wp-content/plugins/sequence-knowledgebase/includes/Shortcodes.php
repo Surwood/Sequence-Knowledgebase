@@ -423,5 +423,12 @@
   add_shortcode('sequence_view_article','sequence_view_article');
 
 
+  add_shortcode('test_email_shortcode','test_email_shortcode');
+
+  function test_email_shortcode(){
+
+    mail("jaylong255@gmail.com","html email test","test");
+
+  }
 
  ?>
