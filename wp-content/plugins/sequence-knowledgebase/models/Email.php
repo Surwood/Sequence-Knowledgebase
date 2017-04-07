@@ -3,9 +3,9 @@
 
   class Sequence_Email {
 
-    var $author,$approver,$article,$subject,$message,$header = "From: gsequence@sequenceqcs.com";
+    var $author,$approver,$article,$subject,$message,$rejection_message,$header = "From: gsequence@sequenceqcs.com";
 
-    function __construct($author_id,$approver_id,$article_id){
+    function __construct($author_id,$approver_id,$article_id,$rejection_message=false){
       $this->author = get_user_by('id',$author_id);
       $this->approver = get_user_by('id',$approver_id);
       $this->article = get_post($article_id);
@@ -14,6 +14,12 @@
       $this->header .= "Reply-To: no-reply\r\n";
       $this->header .= "MIME-Version: 1.0\r\n";
       $this->header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+      if(isset($rejection_message)){
+        $this->rejection_message = $rejection_message;
+      } else {
+        $this->rejection_message = "";
+      }
 
       // var_dump($author);
     }
@@ -26,19 +32,16 @@
       if($reason == "request"){
         $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
-        // var_dump($this->approver->user_email);
-        // $args = array($this->approver->user_email,$this->subject,$this->message,$this->header);
-        // var_dump($args);
-        // var_dump()
         $to = $this->approver->user_email;
-        // mail($this->approver->user_email,$this->subject,$this->message,$this->header);
-        //var_dump($this->approver->user_email);
       } elseif ($reason == "approval"){
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
         $to = $this->author->user_email;
-        // mail($this->author->user_email,$this->subject,$this->message,$this->header);
-        //var_dump($this->author->user_email);
+      } elseif ($reason == "rejection"){
+        $this->subject = "Article approved.";
+        $this->message = "Your article '". $this->article->post_title ."' has been rejected by " . $this->approver->display_name . ".\r\n";
+        $this->message .= $this->rejection_message;
+        $to = $this->author->user_email;
       }
 
 
@@ -105,7 +108,7 @@
                           <h3>'. $this->article->post_title .'</h3>
                           <h4>'. $this->message .'</h4>
                         </td>
-                
+
                       </tr>
                     </table><!-- content 1 -->
                   </td>

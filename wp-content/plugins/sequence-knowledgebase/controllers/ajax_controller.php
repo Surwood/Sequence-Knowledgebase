@@ -6,6 +6,8 @@
    $parse_uri = explode( '/wp-content/', $_SERVER['SCRIPT_FILENAME'] );
    require_once( $parse_uri[0] . '/wp-load.php' );
 
+   require_once SKB_PLUGIN_PATH . 'models/Email.php';
+
     if ($_GET['method'] == "test"){
         test();
     } elseif ($_GET['method'] == "unpublish_article"){
@@ -14,6 +16,30 @@
       update_article_rank();
     } elseif ($_GET['method'] == "get_search_results"){
       get_search_results();
+    } elseif ($_GET['method'] == "reject_article"){
+      reject_article();
+    }
+
+    function reject_article(){
+
+
+      if(isset($_POST['article_id'])){
+        $article_id = $_POST['article_id'];
+        $article = array(
+          'ID'  =>  $article_id,
+          'post_status' =>  "rejected"
+        );
+        wp_update_post($article);
+        if(isset($_POST['message'])){
+          $user = wp_get_current_user();
+          $article = get_post($_POST['article_id']);
+          $email = new Sequence_Email($article->post_author,$user->ID,$article->ID,$_POST['message']);
+          // var_dump($email);
+          $email->send("rejection");
+        }
+      }
+      echo "1";
+
     }
 
 

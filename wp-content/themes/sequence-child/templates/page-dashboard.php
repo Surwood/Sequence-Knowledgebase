@@ -253,8 +253,8 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
         <p style="display:none;">
 
             <label for="reject-article-message">Please enter a message to let the author know why this article has been rejected. </label>
-            <textarea id="reject-article-message"></textarea>
-            <button type="button" class="btn btn-secondary article-action reject-article-go"><?php _e('Reject Article', 'framework') ?></button>
+            <textarea style="width: 100%;" id="reject-article-message"></textarea>
+            <button style="width: 100%;" type="button" class="btn btn-secondary article-action reject-article-go"><?php _e('Reject Article', 'framework') ?></button>
 
         </p>
 			</div>
