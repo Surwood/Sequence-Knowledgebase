@@ -479,7 +479,7 @@
     			<td>
     				<table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
     					<tr>
-    						<td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
+    						<td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
     					</tr>
 
     				</table><!-- header -->
@@ -510,108 +510,35 @@
     			<td>
     				<table id="content-1" cellpadding="0" cellspacing="0" align="center">
     					<tr>
-    						<td width="170" valign="top">
-    							<table cellpadding="5" cellspacing="0">
-    								<tr><td bgcolor="d0d0d0"><img src="http://tessat.s3.amazonaws.com/coins_small.jpg" width="170" /></td></tr></table>
-    						</td>
+
     						<td width="15"></td>
     						<td width="375" valign="top" colspan="3">
     							<h3>Article Title</h3>
-    							<h4>Article Excerpt</h4>
+    							<h4>Email message goes here.</h4>
     						</td>
+                <td align="center" width="">
+                  <p>Article excerpt goes here. </p>
+                </td>
     					</tr>
     				</table><!-- content 1 -->
     			</td>
     		</tr><!-- content 1 -->
 
-    		<tr>
-    			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
-    		</tr>
-    		<tr>
+        <tr>
     			<td>
-    				<table id="content-3" cellpadding="0" cellspacing="0" align="center">
-    					<tr>
-    						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
-    							<img src="http://tessat.s3.amazonaws.com/crayons.jpg" width="170" />
-    						</td>
-    						<td width="15"></td>
-    						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
-    							<img src="http://tessat.s3.amazonaws.com/handshake.jpg" />
-    						</td>
-    						<td width="15"></td>
-    						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
-    							<img src="http://tessat.s3.amazonaws.com/moo02.jpg" />
-    						</td>
-    					</tr>
-    				</table><!-- content-3 -->
+    				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+              <td align="center" width="100%">
+
+                <p>Click <a href="'. site_url() .'dashboard/view-article/?article='. $article->ID .'">here</a> to view article. </p>
+              </td>
+            </tr>
+    				</table><!-- content-2 -->
     			</td>
-    		</tr><!-- content-3 -->
-    		<tr>
-    			<td>
-    				<table id="content-4" cellpadding="0" cellspacing="0" align="center">
-    					<tr>
-    						<td width="180" valign="top">
-    							<h5>Exciting New Products!</h5>
-    							<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-    						</td>
-    						<td width="15"></td>
-    						<td width="180" valign="top">
-    							<h5>A Newsletter Every Month</h5>
-    							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-    								deserunt mollit anim id est laborum.</p>
-    						</td>
-    						<td width="15"></td>
-    						<td width="180" valign="top">
-    							<h5>New and Improved Forum</h5>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    						</td>
-    					</tr>
-    				</table><!-- content-4 -->
-    			</td>
-    		</tr><!-- content-4 -->
-    		<tr>
-    			<td height="30"><a href="'. site_url() .'"><img src="http://dummyimage.com/570x30/fff/fff" /></a></td>
-    		</tr>
-    		<tr>
-    			<td>
-    				<table id="content-5" cellpadding="0" cellspacing="0" align="center">
-    					<tr>
-    						<td width="267" valign="top">
-    							<table cellpadding="5" cellspacing="0" bgcolor="d0d0d0"><tr><td>
-    								<img src="http://tessat.s3.amazonaws.com/card18.jpg" />
-    							</td></tr></table>
-    						</td>
-    						<td width="15"></td>
-    						<td width="278" valign="top">
-    							<h4>This is a heading</h4>
-    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    						</td>
-    					</tr>
-    				</table><!-- content-5 -->
-    			</td>
-    		</tr><!-- content-5 -->
-    		<tr>
-    			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
-    		</tr>
-    		<tr>
-    			<td>
-    				<table id="content-6" cellpadding="0" cellspacing="0" align="center">
-    					<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    					<p align="center"><a href="#">CALL TO ACTION</a></p>
-    				</table>
-    			</td>
-    		</tr>
+    		</tr><!-- content-2 -->
 
     	</table><!-- main -->
-    	<table id="bottom-message" cellpadding="20" cellspacing="0" width="600" align="center">
-    		<tr>
-    			<td align="center">
-    				<p>You are receiving this email because you signed up for updates</p>
-    				<p><a href="#">Unsubscribe instantly</a> | <a href="#">Forward to a friend</a> | <a href="#">View in Browser</a></p>
-    			</td>
-    		</tr>
-    	</table><!-- top message -->
+
     </td></tr></table><!-- wrapper -->
 
 
