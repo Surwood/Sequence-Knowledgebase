@@ -5,7 +5,7 @@
 
     var $author,$approver,$article,$subject,$message,$rejection_message,$header = "From: gsequence@sequenceqcs.com";
 
-    function __construct($author_id,$approver_id,$article_id,$rejection_message=false){
+    function __construct($author_id,$approver_id,$article_id,$rejection_message){
       $this->author = get_user_by('id',$author_id);
       $this->approver = get_user_by('id',$approver_id);
       $this->article = get_post($article_id);
@@ -38,7 +38,7 @@
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
         $to = $this->author->user_email;
       } elseif ($reason == "rejection"){
-        $this->subject = "Article approved.";
+        $this->subject = "Article rejected.";
         $this->message = "Your article '". $this->article->post_title ."' has been rejected by " . $this->approver->display_name . ".\r\n";
         $this->message .= $this->rejection_message;
         $to = $this->author->user_email;
