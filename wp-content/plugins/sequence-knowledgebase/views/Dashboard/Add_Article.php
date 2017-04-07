@@ -272,7 +272,7 @@
 
             <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
-            <?php (current_user_can('sequence_approver') || current_user_can('sequence_admin'))? ?><button type="button" class="btn btn-secondary article-action reject-article"><?php _e('Reject', 'framework') ?></button> <?php : echo ""; ?>
+            <button type="button" style="<?php (current_user_can('sequence_approver') || current_user_can('sequence_admin'))? echo "" : "display:none;"; ?>" class="btn btn-secondary article-action reject-article"><?php _e('Reject', 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
 
 
