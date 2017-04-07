@@ -318,13 +318,18 @@
 
       if($(this).hasClass('reject-article')){
 
+        $('#skb-dashboard-modal').modal();
+        $('#skb-dashboard-modal .modal-body span').hide();
+        $('#skb-dashboard-modal .modal-body p').show();
+
+
         // if($(''))
-        $.post(url + 'controllers/ajax_controller.php?method=reject_article',
-          {  },
-          function(data){
-            window.location.href = "<?php echo site_url(); ?>/dashboard/";
-          }
-        );
+        // $.post(url + 'controllers/ajax_controller.php?method=reject_article',
+        //   {  },
+        //   function(data){
+        //     window.location.href = "<?php echo site_url(); ?>/dashboard/";
+        //   }
+        // );
       }
 
 
