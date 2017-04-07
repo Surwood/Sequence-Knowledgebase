@@ -486,9 +486,26 @@
     			</td>
     		</tr><!-- header -->
 
+
+        <tr>
+    			<td>
+    				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+              <td align="center" width="100%">
+                <p>Click <a href="'. site_url() .'/dashboard/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
+              </td>
+            </tr>
+    				</table><!-- content-2 -->
+    			</td>
+    		</tr><!-- content-2 -->
+
+
     		<tr>
     			<td></td>
     		</tr>
+
+
+
     		<tr>
     			<td>
     				<table id="content-1" cellpadding="0" cellspacing="0" align="center">
@@ -499,22 +516,14 @@
     						</td>
     						<td width="15"></td>
     						<td width="375" valign="top" colspan="3">
-    							<h3>All New Site Design</h3>
-    							<h4>It\'s 150% Better and 40% More Efficient!</h4>
+    							<h3>Article Title</h3>
+    							<h4>Article Excerpt</h4>
     						</td>
     					</tr>
     				</table><!-- content 1 -->
     			</td>
     		</tr><!-- content 1 -->
-    		<tr>
-    			<td>
-    				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
-    					<tr>
-    						<td width="570"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td>
-    					</tr>
-    				</table><!-- content-2 -->
-    			</td>
-    		</tr><!-- content-2 -->
+
     		<tr>
     			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
     		</tr>
