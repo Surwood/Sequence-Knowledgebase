@@ -427,7 +427,37 @@
 
   function test_email_shortcode(){
 
-    mail("jaylong255@gmail.com","html email test","test");
+    $message = '
+
+      <html>
+
+        <body>
+
+
+          <table width="100%" cellpadding="0" cellspacing="0" bgcolor="e4e4e4"><tr></td>
+
+          <table id="top-message" cellpadding="20" cellspacing="0" width="600" align="center">
+          		<tr>
+          			<td align="center">
+          				<p>Trouble viewing this email? <a href="#">View in Browser</a></p>
+          			</td>
+          		</tr>
+          	</table><!-- top message -->
+
+
+
+          </td></tr></table>
+
+        </body>
+
+      </html>
+
+    ';
+
+    echo $message;
+
+
+    mail("jaylong255@gmail.com","html email test",$message);
 
   }
 
