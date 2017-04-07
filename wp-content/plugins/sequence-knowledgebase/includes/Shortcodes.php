@@ -474,7 +474,7 @@
     			<td>
     				<table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
     					<tr>
-    						<td width="100%" bgcolor="#ffffff"><img src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
+    						<td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
     					</tr>
 
     				</table><!-- header -->
@@ -557,7 +557,7 @@
     			</td>
     		</tr><!-- content-4 -->
     		<tr>
-    			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
+    			<td height="30"><a href="'. site_url() .'"><img src="http://dummyimage.com/570x30/fff/fff" /></a></td>
     		</tr>
     		<tr>
     			<td>
