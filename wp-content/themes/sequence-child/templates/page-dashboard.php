@@ -9,7 +9,7 @@
   // $user = get_current_user()
 
 //we comment here for getting access in this page
-if( !is_user_logged_in() || ( !current_user_can('sequence_user') && !current_user_can('sequence_author') && !current_user_can('sequence_admin') && !current_user_can('sequence_admin') ) ){
+if( !is_user_logged_in() || ( !current_user_can('sequence_user') && !current_user_can('sequence_author') && !current_user_can('sequence_approver') && !current_user_can('sequence_admin') ) ){
   wp_redirect(home_url('/login/'));
   // exit('nooch');
 } else {
