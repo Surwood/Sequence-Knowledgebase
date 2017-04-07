@@ -198,12 +198,24 @@
         WHERE posts.post_type = 'skb_article'
         AND posts.post_status = 'pending'
         AND meta.meta_key = 'post_approver'
-        AND meta.meta_value = '". get_current_user_id() ."'
+        AND meta.meta_value = '". $user->ID ."'
 
       ";
-
-
       $pending_approval = $wpdb->get_results($sql);
+    } elseif (current_user_can('sequence_author')){
+
+      $sql = "
+        SELECT
+        *
+        FROM ". $wpdb->posts ." posts
+        JOIN ". $wpdb->postmeta ." meta ON posts.ID = meta.post_id
+        WHERE posts.post_type = 'skb_article'
+        AND posts.post_status = 'rejected'
+        AND posts.post_author = '". $user->ID ."'
+
+      ";
+      $rejected_articles = $wpdb->get_results($sql);
+
     }
 
     $sql = "
