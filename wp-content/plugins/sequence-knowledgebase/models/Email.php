@@ -105,9 +105,7 @@
                           <h3>'. $this->article->post_title .'</h3>
                           <h4>'. $this->message .'</h4>
                         </td>
-                        <td align="center" width="">
-                          <p>'. $this->article->post_excerpt .'</p>
-                        </td>
+                
                       </tr>
                     </table><!-- content 1 -->
                   </td>
