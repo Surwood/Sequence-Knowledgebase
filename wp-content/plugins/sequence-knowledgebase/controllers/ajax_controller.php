@@ -18,10 +18,97 @@
       get_search_results();
     } elseif ($_GET['method'] == "reject_article"){
       reject_article();
+    } elseif ($_GET['method'] == "auto_save"){
+      auto_save();
+    }
+
+    function auto_save(){
+
+      $response = new stdClass();
+      $response->message = "No action taken.";
+
+      $user = wp_get_current_user();
+
+      $post_information = array(
+        'post_author' =>  $user->ID,
+        'post_type' => 'skb_article',
+        'post_status' => 'draft'
+      );
+
+      if(isset($_POST['postTitle'])){
+        $post_information['post_title'] = $_POST['postTitle'];
+      } else {
+        if(isset($_POST['postSummary'])){
+            $post_information['post_title'] = substr($_POST['postSummary'],0,55);
+        } elseif (isset($_POST['postContent'])) {
+          $post_information['post_title'] = substr($_POST['postContent'],0,55);
+        } else {
+          $response->message = "Nothing to save. ";
+          echo json_encode($response);
+          exit;
+        }
+      }
+
+      if(isset($_POST['postSummary'])){
+        $post_information['post_excerpt'] = $_POST['postSummary'];
+      }
+      if(isset($_POST['postContent']) && trim($_POST['postContent']) != ""){
+
+        $post_information['post_content'] = $_POST['postContent'] . "test";
+      }
+
+      if(isset($_POST['article_id']) && $_POST['article_id'] != ""){
+
+        // update draft
+        $response->article_id = $_POST['article_id'];
+        $post_information['ID'] = $_POST['article_id'];
+        if(wp_update_post($post_information)){
+          $response->message = "Article saved." . $post_information['post_content'] . "::::";
+        } else {
+          $response->message = "Article failed to save. ";
+        }
+
+
+      } else {
+
+        // create draft
+        if($response->article_id = wp_insert_post( $post_information )){
+          $response->message = "New article created.";
+        } else {
+          $response->message = "New article failed to save. ";
+        }
+
+
+      }
+
+      if($post_id = $response->article_id){
+        if (isset($_POST['postCategories1'])){
+          $categories = array((int)$_POST['postCategories1']);
+          wp_set_object_terms($post_id,$categories,'article_category');
+        }
+        if (isset($_POST['postCategories2'])){
+          $categories = array((int)$_POST['postCategories2']);
+          wp_set_object_terms($post_id,$categories,'article_tag1');
+        }
+        if (isset($_POST['postCategories3'])){
+          $categories = array((int)$_POST['postCategories3']);
+          wp_set_object_terms($post_id,$categories,'article_tag2');
+        }
+        if (isset($_POST['postCategories4'])){
+          $categories = array((int)$_POST['postCategories4']);
+          wp_set_object_terms($post_id,$categories,'article_tag3');
+        }
+        if(isset($_POST['postApprover'])){
+          $article->post_approver = $_POST['postApprover'];
+          update_post_meta($post_id,'post_approver',$article->post_approver);
+        }
+      }
+
+      echo json_encode($response);
+
     }
 
     function reject_article(){
-
 
       if(isset($_POST['article_id'])){
         $article_id = $_POST['article_id'];

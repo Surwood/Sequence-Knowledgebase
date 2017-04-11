@@ -65,6 +65,8 @@
 
 <form action="" id="primaryPostForm" method="POST">
 
+    <input type="hidden" id="article-id" value="" />
+
       <div class="row ">
 
         <div class="row col-lg-12 " style="text-align:left;">
@@ -355,6 +357,52 @@
 
     });
 
+    $('#sequence-article-form').append('<div id="sequence-article-autosave" class="alert alert-success sequence-alert-message">test</div>');
+
+
+
+    setInterval(function(){
+      // alert(get_tinymce_content('postContent'));
+      $.post(url + 'controllers/ajax_controller.php?method=auto_save',
+        {
+          article_id: $('#article-id').val(),
+          postTitle: $('#postTitle').val(),
+          postSummary: $('#postSummary').val(),
+          postContent: get_tinymce_content('postContent'),
+          postCategories1: $('#postCategories1').val(),
+          postCategories2: $('#postCategories2').val(),
+          postCategories3: $('#postCategories3').val(),
+          postCategories4: $('#postCategories4').val(),
+          postApprover: $('#postApprover').val()
+        },
+        function(data){
+          data = JSON.parse(data);
+          if(data.article_id){
+            $('#article-id').val(data.article_id);
+          }
+          var auto_save = $('#sequence-article-autosave');
+          auto_save.html(data.message);
+          auto_save.show();
+          auto_save.fadeOut(4000);
+        }
+      );
+
+    },30000);
+
   })(jQuery);
+
+
+  function get_tinymce_content(id) {
+      var content;
+      var inputid = id;
+      var editor = tinyMCE.get(inputid);
+      var textArea = jQuery('textarea#' + inputid);
+      if (textArea.length>0 && textArea.is(':visible')) {
+          content = textArea.val();
+      } else {
+          content = editor.getContent();
+      }
+      return content;
+  }
 
 </script>

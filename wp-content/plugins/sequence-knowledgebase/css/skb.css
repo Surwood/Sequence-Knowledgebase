@@ -1,3 +1,15 @@
 #sequence-article-form {  }
 /*#sequence-article-form input[type=textarea] { width: 80%; }*/
 /*#content .wide { width: 100%; }*/
+
+.article-widget-header { cursor: pointer; }
+
+.sequence-alert-message {
+  padding: 15px;
+  margin: 15px;
+  position: fixed;
+  bottom: 150px;
+  right: 150px;
+  box-shadow: 2px 2px;
+  display: none;
+}
