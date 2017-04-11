@@ -377,7 +377,7 @@
         },
         function(data){
           data = JSON.parse(data);
-          if(data.article_id){
+          if(data.article_id !== -1 && data.article_id != ""){
             $('#article-id').val(data.article_id);
           }
           var auto_save = $('#sequence-article-autosave');
@@ -387,7 +387,7 @@
         }
       );
 
-    },30000);
+    },5000);
 
   })(jQuery);
 

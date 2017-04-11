@@ -54,7 +54,7 @@
       }
       if(isset($_POST['postContent']) && trim($_POST['postContent']) != ""){
 
-        $post_information['post_content'] = $_POST['postContent'] . "test";
+        $post_information['post_content'] = $_POST['postContent'];
       }
 
       if(isset($_POST['article_id']) && $_POST['article_id'] != ""){
@@ -63,7 +63,7 @@
         $response->article_id = $_POST['article_id'];
         $post_information['ID'] = $_POST['article_id'];
         if(wp_update_post($post_information)){
-          $response->message = "Article saved." . $post_information['post_content'] . "::::";
+          $response->message = "Article saved. ";
         } else {
           $response->message = "Article failed to save. ";
         }
@@ -75,7 +75,7 @@
         if($response->article_id = wp_insert_post( $post_information )){
           $response->message = "New article created.";
         } else {
-          $response->message = "New article failed to save. ";
+          $response->message = "Nothing to save. ";
         }
 
 
