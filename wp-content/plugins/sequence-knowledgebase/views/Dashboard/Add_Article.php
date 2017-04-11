@@ -333,6 +333,7 @@
             function(data){
               $('#skb-dashboard-modal .modal-body p').hide();
               $('#skb-dashboard-modal .modal-body span').show();
+              window.location.href = "<?php echo site_url(); ?>/dashboard/";
             }
           );
         });
