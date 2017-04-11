@@ -19,6 +19,8 @@
   $high_rating = 0;
   $most_views = 0;
 
+  
+
   foreach($posts as $post){
     $avg_rating = 0;
     $ratings = get_post_meta($post->ID,'article_rating');

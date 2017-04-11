@@ -21,11 +21,8 @@
         <h1><?php the_title(); ?></h1>
         <?php the_excerpt();
         if($terms = get_the_terms(get_the_ID(),'article_tag1')){
-          foreach($terms as $term){
-            echo $term->name;
-          }
-        }
-        ?>
+          foreach($terms as $term){ echo $term->name; }
+        } ?>
     </a>
     </div>
   <?php endwhile; wp_reset_postdata(); ?>
@@ -33,9 +30,5 @@
     <div id="main-content">
       <h2>No Articles</h2>
     </div>
-
-
   <?php endif; ?>
-
-
 </div>
