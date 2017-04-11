@@ -232,26 +232,9 @@
     $your_articles = $wpdb->get_results($sql);
 
 
-    // if(count($your_articles) > 0){
-    //   $args = array(
-    //     'post_type' =>  'skb_article',
-    //     'post_in' => $your_articles
-    //   );
-    //   $your_query = new WP_Query($args);
-    // }
-
-
-
-    // return "TEST";
-
-
-
-
-  //  include SKB_PLUGIN_PATH . "views/Dashboard/Recent_Articles.php";
-
-
 
   }
+
 
 
   add_shortcode('sequence_pending_approval','sequence_pending_approval');
@@ -358,6 +341,30 @@
 
     }
     // include SKB_PLUGIN_PATH . "views/Dashboard/User_Articles.php";
+  }
+
+
+
+  add_shortcode('sequence_article_drafts','sequence_article_drafts');
+  function sequence_article_drafts($atts){
+    global $wpdb;
+    $user = wp_get_current_user();
+    $pending_approval = array();
+    if(
+      in_array('sequence_approver',(array)$user->roles ) ||
+      in_array('sequence_admin',(array)$user->roles ) ||
+      in_array('sequence_author',(array)$user->roles )
+    ){
+      $sql = "
+        SELECT *
+        FROM ". $wpdb->posts ." posts
+        WHERE posts.post_type = 'skb_article'
+        AND posts.post_status = 'draft'
+        AND posts.post_author = '". $user->ID ."'
+      ";
+      $article_drafts = $wpdb->get_results($sql);
+      include SKB_PLUGIN_PATH . "views/Dashboard/Article_Drafts.php";
+    }
   }
 
 
