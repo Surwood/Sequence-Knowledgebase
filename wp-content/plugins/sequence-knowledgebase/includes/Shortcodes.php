@@ -349,7 +349,7 @@
   function sequence_article_drafts($atts){
     global $wpdb;
     $user = wp_get_current_user();
-    $pending_approval = array();
+    $article_drafts = array();
     if(
       in_array('sequence_approver',(array)$user->roles ) ||
       in_array('sequence_admin',(array)$user->roles ) ||
