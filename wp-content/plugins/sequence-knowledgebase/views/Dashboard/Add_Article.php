@@ -65,7 +65,7 @@
 
 <form action="" id="primaryPostForm" method="POST">
 
-    <input type="hidden" id="article-id" value="" />
+    <input type="hidden" id="article-id" value="<?php echo $_POST['article']; ?>" />
 
       <div class="row ">
 
