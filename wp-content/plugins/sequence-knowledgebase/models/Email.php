@@ -118,7 +118,7 @@
                     <table id="content-2" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                       <td align="center" width="100%">
-                        <p>Click <a href="'. site_url() .'dashboard/view-article/?article='. $this->article->ID .'">here</a> to view article. </p>
+                        <p>Click <a href="'. site_url() .'/dashboard/view-article/?article='. $this->article->ID .'">here</a> to view article. </p>
                       </td>
                     </tr>
                     </table><!-- content-2 -->
