@@ -35,6 +35,8 @@
         'post_status' => 'draft'
       );
 
+
+
       if(isset($_POST['postTitle'])){
         $post_information['post_title'] = $_POST['postTitle'];
       } else {
@@ -60,8 +62,10 @@
       if(isset($_POST['article_id']) && $_POST['article_id'] != ""){
 
         // update draft
+        $post = get_post($_POST['article_id']);
         $response->article_id = $_POST['article_id'];
         $post_information['ID'] = $_POST['article_id'];
+        $post_information['post_author'] = $post->post_author;
         if(wp_update_post($post_information)){
           $response->message = "Article saved. ";
         } else {
