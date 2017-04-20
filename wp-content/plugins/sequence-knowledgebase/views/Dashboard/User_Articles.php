@@ -4,7 +4,7 @@
       <h3>Your Articles</h3>
     <hr />
   </div>
-    <div id="user-article-results" class="user-article-results collapse"></div>
+    <div id="user-article-results" class="user-article-results"></div>
   <hr />
 </div>
 <script>
