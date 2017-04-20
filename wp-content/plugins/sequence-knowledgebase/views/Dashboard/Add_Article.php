@@ -272,7 +272,7 @@
 
           <div class="btn-group"></div>
 
-            <button type="button" class="btn btn-secondary article-action submit-article"><?php _e('Submit', 'framework') ?></button>
+            <button type="button" class="btn btn-secondary article-action submit-article"><?php $submit_button = ((isset($_REQUEST['article']) && $article->post_author != $user->ID) && (current_user_can('sequence_approver') || current_user_can('sequence_admin'))) ? "Approve" : "Submit"; _e($submit_button, 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
             <button type="button" style="<?php echo ((isset($_REQUEST['article']) && $article->post_author != $user->ID) && (current_user_can('sequence_approver') || current_user_can('sequence_admin'))) ? "" : "display:none;"; ?>" class="btn btn-secondary article-action reject-article"><?php _e('Reject', 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>

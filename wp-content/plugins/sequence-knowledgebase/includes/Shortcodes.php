@@ -5,6 +5,7 @@
 
 
 
+
     $user = wp_get_current_user();
 
     $author_name = $user->display_name;
@@ -78,7 +79,8 @@
               !in_array('sequence_approver',(array)$user->roles ) &&
               !in_array('sequence_admin',(array)$user->roles )
             ){
-              if($article->post_author != get_current_user_id()){
+              if($article->post_author != $user->ID){
+                $submit_button = "Approve";
                 wp_redirect(home_url('/login/'));
                 exit;
               }

@@ -59,18 +59,27 @@
         $post_information['post_content'] = $_POST['postContent'];
       }
 
+
+
       if(isset($_POST['article_id']) && $_POST['article_id'] != ""){
+
 
         // update draft
         $post = get_post($_POST['article_id']);
-        $response->article_id = $_POST['article_id'];
-        $post_information['ID'] = $_POST['article_id'];
-        $post_information['post_author'] = $post->post_author;
-        if(wp_update_post($post_information)){
-          $response->message = "Article saved. ";
-        } else {
-          $response->message = "Article failed to save. ";
+
+
+        if($user->ID == $post->post_author){
+          $response->article_id = $_POST['article_id'];
+          $post_information['ID'] = $_POST['article_id'];
+          $post_information['post_author'] = $post->post_author;
+          if(wp_update_post($post_information)){
+            $response->message = "Article saved. ";
+          } else {
+            $response->message = "Article failed to save. ";
+          }
         }
+
+
 
 
       } else {
