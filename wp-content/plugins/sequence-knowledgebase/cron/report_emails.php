@@ -58,9 +58,9 @@
   var_dump($args);
 
   $header = "From: gsequence@sequenceqcs.com\r\n";
-  $header .= "Reply-To: no-reply\r\n";
-  $header .= "MIME-Version: 1.0\r\n";
-  $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+  // $header .= "Reply-To: no-reply\r\n";
+  // $header .= "MIME-Version: 1.0\r\n";
+  // $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
   $message = "Your article '". $post->post_title ."' received and average\r\n rating of ". $high_rating ." and got ". $most_views ." page views. ";
 
@@ -154,7 +154,7 @@
   mail(
     $author->user_email,
     'Highest Ranking Article!',
-    $body,
+    $message,
     $header
   );
 
@@ -177,17 +177,17 @@
 
     if($days > 7){
       $header = "From: gsequence@sequenceqcs.com\r\n";
-      $header .= "Reply-To: no-reply\r\n";
-      $header .= "MIME-Version: 1.0\r\n";
-      $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+      // $header .= "Reply-To: no-reply\r\n";
+      // $header .= "MIME-Version: 1.0\r\n";
+      // $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
       $message = "Your article '". $post->post_title ."' has still not been approved. \r\n It has been ". floor($days) ." days since you last submitted changes to this article. ";
       $body = send_mail_template($post,$message);
-      echo $body;
+      echo $message;
         // die($post->modification_date . "test");
       mail(
         $author->user_email,
         'Article still not approved. ',
-        $body,
+        $message,
         $header
       );
     }

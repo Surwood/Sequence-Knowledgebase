@@ -24,17 +24,26 @@
     </div>
 
 
+
     <div class="row">
-      <div class="col-xs-12">
-          <hr /><h2>Title:</h2><hr />
-          <h3><?php echo $article->post_title; ?></h3>
+
+      <hr />
+
+      <div class="col-xs-1"><h2>Title:</h2></div>
+      <div class="col-xs-11"><h3><i><?php echo $article->post_title; ?></i></h3></div>
+
+
+
       </div>
     </div>
+
+    <hr />
+
     <div class="row">
-      <div class="col-xs-12">
-          <hr /><h2>Summary:</h2><hr />
-          <p><?php echo $article->post_excerpt; ?></p>
-      </div>
+
+      <div class="col-xs-2"><h2>Summary:</h2></div>
+      <div class="col-xs-10"><br /><p><?php echo $article->post_excerpt; ?></p></div>
+
     </div>
 
 

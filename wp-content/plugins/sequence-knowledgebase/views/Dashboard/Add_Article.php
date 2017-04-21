@@ -248,7 +248,8 @@
                   'hide_empty' => 0,
                   'include_selected' => true,
                   'include' => $users_with_role,
-                  'selected'  =>  $selected
+                  'selected'  =>  $selected,
+                  'class' =>  ''
                 );
                 wp_dropdown_users($args);
               ?>
@@ -291,6 +292,9 @@
 
   (function($){
 
+    $('#postApprover option:first').val(null);
+    $('#postApprover').attr('required',true);
+
     var url = "<?php echo SKB_PLUGIN_URL; ?>";
     var path = "<?php echo SKB_PLUGIN_PATH; ?>";
     var article_id = "<?php echo $article->ID; ?>";
@@ -327,10 +331,11 @@
         $('.reject-article-go').click(function(){
           $.post(url + 'controllers/ajax_controller.php?method=reject_article',
             {
-              message: $('#reject-article-message').html(),
+              message: $('#reject-article-message').val(),
               article_id: '<?php echo $article->ID; ?>'
             },
             function(data){
+              // alert($('#reject-article-message').val())
               $('#skb-dashboard-modal .modal-body p').hide();
               $('#skb-dashboard-modal .modal-body span').show();
               window.location.href = "<?php echo site_url(); ?>/dashboard/";
