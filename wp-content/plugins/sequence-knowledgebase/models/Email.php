@@ -18,7 +18,7 @@
       $this->header = "From: gsequence@sequenceqcs.com\r\n";
 
       if(isset($rejection_message)){
-        $this->rejection_message = $rejection_message;
+        $this->rejection_message = "Rejection message: " . $rejection_message;
       } else {
         $this->rejection_message = "";
       }
@@ -32,24 +32,53 @@
       $to = "";
 
       if($reason == "request"){
+
         $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         $to = $this->approver->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
+        $this->subject = "Approval requested.";
+        $this->message = "You sent an approval request to ". $this->approver->display_name ." for article '" . $this->article->post_title . "'";
+        $to = $this->author->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
       } elseif ($reason == "approval"){
+
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
         $to = $this->author->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
+        $this->subject = "Approval sent.";
+        $this->message = "You approved article '" . $this->article->post_title . "' by author " . $this->author->display_name;
+        $to = $this->approver->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
       } elseif ($reason == "rejection"){
+
         $this->subject = "Article rejected.";
         $this->message = "Your article '". $this->article->post_title ."' has been rejected by " . $this->approver->display_name . ".\r\n";
         $this->message .= $this->rejection_message;
         $to = $this->author->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
+        $this->subject = "Rejection sent.";
+        $this->message = "You rejected article '". $this->article->post_title ."' by author " . $this->author->display_name . "\r\n";
+        $this->message .= $this->rejection_message;
+        $to = $this->author->user_email;
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
+
+
       }
 
-      mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+
 
 
     }
+
+
     public function send_formatted($reason){
 
 

@@ -276,7 +276,9 @@
             <button type="button" class="btn btn-secondary article-action submit-article"><?php $submit_button = ((isset($_REQUEST['article']) && $article->post_author != $user->ID) && (current_user_can('sequence_approver') || current_user_can('sequence_admin'))) ? "Approve" : "Submit"; _e($submit_button, 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action cancel-article"><?php _e('Home', 'framework') ?></button>
             <button type="button" style="<?php echo ((isset($_REQUEST['article']) && $article->post_author != $user->ID) && (current_user_can('sequence_approver') || current_user_can('sequence_admin'))) ? "" : "display:none;"; ?>" class="btn btn-secondary article-action reject-article"><?php _e('Reject', 'framework') ?></button>
+            <button type="button" class="btn btn-secondary article-action save-article"><?php _e('Save', 'framework') ?></button>
             <button type="button" class="btn btn-secondary article-action delete-article"><?php _e('Delete', 'framework') ?></button>
+
 
 
 
@@ -320,6 +322,8 @@
             window.location.href = "<?php echo site_url(); ?>/dashboard/";
           }
         );
+      } else if ($(this).hasClass('save-article')){
+        save_article();
       }
 
       if($(this).hasClass('reject-article')){
@@ -365,10 +369,8 @@
 
     $('#sequence-article-form').append('<div id="sequence-article-autosave" class="alert alert-success sequence-alert-message">test</div>');
 
+    function save_article(){
 
-
-    setInterval(function(){
-      // alert(get_tinymce_content('postContent'));
       $.post(url + 'controllers/ajax_controller.php?method=auto_save',
         {
           article_id: $('#article-id').val(),
@@ -392,6 +394,12 @@
           auto_save.fadeOut(4000);
         }
       );
+
+    }
+
+    setInterval(function(){
+      // alert(get_tinymce_content('postContent'));
+      save_article();
 
     },60000);
 

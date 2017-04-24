@@ -47,6 +47,8 @@
 
   $post = $results[$high_rating][$most_views][0];
   $author = get_user_by('ID',$post->post_author);
+  $approver_id = get_post_meta($post->ID,'post_approver',true);
+  $approver = get_user_by('ID',$approver_id);
 
   $args = array(
     $author->user_email,
@@ -58,9 +60,6 @@
   var_dump($args);
 
   $header = "From: gsequence@sequenceqcs.com\r\n";
-  // $header .= "Reply-To: no-reply\r\n";
-  // $header .= "MIME-Version: 1.0\r\n";
-  // $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
   $message = "Your article '". $post->post_title ."' received and average\r\n rating of ". $high_rating ." and got ". $most_views ." page views. ";
 
@@ -151,6 +150,8 @@
 
   echo $body;
 
+  $message .= ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.';
+
   mail(
     $author->user_email,
     'Highest Ranking Article!',
@@ -169,29 +170,67 @@
   $posts = get_posts($args);
   foreach ($posts as $post){
 
+    $author = get_user_by('ID',$post->post_author);
+    $approver_id = get_post_meta($post->ID,'post_approver',true);
+    $approver = get_user_by('ID',$approver_id);
+
     $days = (time() - strtotime($post->post_modified)) / ( 60 * 60 * 24 );
-    // $days = $post->post_modified;
-    // echo $days;
-    // die('test');
-    // echo "<h1>". $days ."</h1>";
 
     if($days > 7){
       $header = "From: gsequence@sequenceqcs.com\r\n";
-      // $header .= "Reply-To: no-reply\r\n";
-      // $header .= "MIME-Version: 1.0\r\n";
-      // $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-      $message = "Your article '". $post->post_title ."' has still not been approved. \r\n It has been ". floor($days) ." days since you last submitted changes to this article. ";
+      $message = "Your article '". $post->post_title ."' has still not been approved. \r\n It has been ". floor($days) ." days since you last submitted changes to this article. \n";
+      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.';
       $body = send_mail_template($post,$message);
       echo $message;
-        // die($post->modification_date . "test");
       mail(
         $author->user_email,
         'Article still not approved. ',
         $message,
         $header
       );
+
+        $message = "You have still not approved or rejected article '". $post->post_title ."' by author ". $author->display_name .".\r\n";
+        $message .=   "It has been ". floor($days) ." days since this article was last submitted for approval. \n";
+        $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.';
+        $body = send_mail_template($post,$message);
+        echo $message;
+        mail(
+          $approver->user_email,
+          'Article still not approved. ',
+          $message,
+          $header
+        );
+
     }
   }
+
+  // send email to expired draft posts
+  $args = array(
+    'post_type'=>'skb_article',
+    'post_status' =>  'draft'
+  );
+  $posts = get_posts($args);
+  foreach ($posts as $post){
+
+    $author = get_user_by('ID',$post->post_author);
+    $days = (time() - strtotime($post->post_modified)) / ( 60 * 60 * 24 );
+
+    if($days > 7){
+      $header = "From: gsequence@sequenceqcs.com\r\n";
+      $message = "Your article draft '". $post->post_title ."' has not yet been submitted for approval. \r\n It has been ". floor($days) ." days since you last updated this draft. \n";
+      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view your draft.';
+      $body = send_mail_template($post,$message);
+      echo $message;
+      mail(
+        $author->user_email,
+        'Article draft still not submitted. ',
+        $message,
+        $header
+      );
+
+    }
+  }
+
 
   function send_mail_template($post,$message){
     $body = '

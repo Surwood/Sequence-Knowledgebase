@@ -361,7 +361,7 @@
         SELECT *
         FROM ". $wpdb->posts ." posts
         WHERE posts.post_type = 'skb_article'
-        AND posts.post_status = 'draft'
+        AND ( posts.post_status = 'draft' OR posts.post_status = 'rejected')
         AND posts.post_author = '". $user->ID ."'
       ";
       $article_drafts = $wpdb->get_results($sql);
