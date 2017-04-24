@@ -307,9 +307,9 @@
 
   require_once  SKB_PLUGIN_PATH . 'models/Email.php';
 
-  add_action( 'init', 'my_add_excerpts_to_pages' );
+  add_action( 'after_setup_theme', 'my_add_excerpts_to_pages' );
   function my_add_excerpts_to_pages() {
-       add_post_type_support( 'page', 'excerpt' );
+      add_post_type_support( 'page', array('excerpt') );
   }
 
   // if ( (current_user_can('sequence_author') || current_user_can('sequence_approver') || current_user_can('sequence_admin') || ) && !current_user_can('upload_files') )
