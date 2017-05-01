@@ -11,8 +11,8 @@
 
   // die($parse_uri[0] . '/wp-load.php');
 
-  require_once( '/home/seqgxp2100/public_html/dev.sequencegxp.com/wp-load.php' );
-  // require_once( '/home/seqgxp2100/public_html/wp-load.php' );
+  // require_once( '/home/seqgxp2100/public_html/dev.sequencegxp.com/wp-load.php' );
+  require_once( '/home/seqgxp2100/public_html/wp-load.php' );
 
 
 
@@ -30,7 +30,7 @@
   $high_rating = 0;
   $most_views = 0;
 
-  $debug_email = "";
+
 
   foreach($posts as $post){
     $avg_rating = 0;
@@ -81,16 +81,12 @@
 
   $message .= ' Visit '. site_url() .'/dashboard/view-article/?article='. $post->ID .' to view article.';
 // echo "<h1>test7!</h1>";
-  mail(
-    $author->user_email,
-    'Highest Ranking Article!',
-    $message,
-    $header
-  );
-
-  $debug_email .= "high ranking: ". $author->user_email ."\r\n";
-  $debug_email .= $message . "\r\n";
-
+  // mail(
+  //   $author->user_email,
+  //   'Highest Ranking Article!',
+  //   $message,
+  //   $header
+  // );
 
   // echo "Mail sent to highest ranking author, " . $author->user_fullname . "<hr />";
   // echo $body . "<hr />";
@@ -105,7 +101,7 @@
   $email_list = array();
 
 
-  $debug_email .= "pending: \r\n";
+
 
   foreach ($posts as $post){
 
@@ -115,31 +111,25 @@
 $email_list[$author->user_email][] = $post;
     $days = (time() - strtotime($post->post_modified)) / ( 60 * 60 * 24 );
 
-    $debug_email .= $author->user_email ."\r\n";
-    // $debug_email .= $message . "\r\n";
-
     if($days > 7){
 
 
 
       $header = "From: gsequence@sequenceqcs.com\r\n";
       $message = "Your article '". $post->post_title ."' has still not been approved. \r\n It has been ". floor($days) ." days since you last submitted changes to this article. \n";
-      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view article.';
+      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.';
       $body = send_mail_template($post,$message);
       // echo $message;
       $email_list[$author->user_email][] = $message;
-      mail(
-        $author->user_email,
-        'Article still not approved. ',
-        $message,
-        $header
-      );
-
-      // $debug_email .= "high ranking: ". $author->user_email ."\r\n";
-      $debug_email .= $message . "\r\n";
-
       // mail(
       //   $author->user_email,
+      //   'Article still not approved. ',
+      //   $message,
+      //   $header
+      // );
+
+      // mail(
+      //   $author->usedebugr_email,
       //   'Article still not approved. ',
       //   $message,
       //   $header
@@ -149,20 +139,18 @@ $email_list[$author->user_email][] = $post;
 
         $message = "You have still not approved or rejected article '". $post->post_title ."' by author ". $author->display_name .".\r\n";
         $message .=   "It has been ". floor($days) ." days since this article was last submitted for approval. \n";
-        $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view article.';
+        $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.';
         $body = send_mail_template($post,$message);
         // echo $message;
-        mail(
-          $approver->user_email,
-          'Article still not approved. ',
-          $message,
-          $header
-        );
+        // mail(
+        //   $approver->user_email,
+        //   'Article still not approved. ',
+        //   $message,
+        //   $header
+        // );
 
     }
   }
-
-
 
 
 
@@ -172,9 +160,6 @@ $email_list[$author->user_email][] = $post;
     'post_status' =>  'draft'
   );
   $posts = get_posts($args);
-
-  $debug_email .= "draft: \r\n";
-
   foreach ($posts as $post){
 
     $author = get_user_by('ID',$post->post_author);
@@ -182,22 +167,21 @@ $email_list[$author->user_email][] = $post;
 
 $email_list[$author->user_email][] = $post;
 
-$debug_email .= $author->user_email ."\r\n";
 
     if($days > 7){
       $header = "From: gsequence@sequenceqcs.com\r\n";
       $message = "Your article draft '". $post->post_title ."' has not yet been submitted for approval. \r\n It has been ". floor($days) ." days since you last updated this draft. \n";
-      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view your draft.';
+      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view your draft.';
       $body = send_mail_template($post,$message);
       // echo $message;
       $email_list[$author->user_email][] = $message;
-      mail(
-        $author->user_email,
-        'Article draft still not submitted. ',
-        $message,
-        $header
-      );
-      $debug_email .= $message . "\r\n";
+      // mail(
+      //   $author->user_email,
+      //   'Article draft still not submitted. ',
+      //   $message,
+      //   $header
+      // );
+
     }
   }
 
@@ -219,25 +203,19 @@ $debug_email .= $author->user_email ."\r\n";
     //$email_list[$author->user_email][] = 'test';
   }
 
+  echo "<pre>";
+  var_dump($email_list);
+  echo "</pre>";
 
-
-  // echo "<pre>";
-  // var_dump($email_list);
-  // echo "</pre>";
-
-  echo $debug_email . "<hr />";
-
-  $body = "all articles: <br />";
+  $body = "";
   foreach($email_list as $address => $email){
     $body .= $address . "\r\n";
   }
 
-  echo $body;
-
   $mail = mail(
     'jaylong255@gmail.com',
-    'sequence debug email',
-    $debug_email,
+    'debugging email script2',
+    $body,
     "From: gsequence@sequenceqcs.com\r\n"
   );
 
