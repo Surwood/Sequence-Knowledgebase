@@ -79,7 +79,7 @@
   $message = "Your article '". $post->post_title ."' received and average\r\n rating of ". $high_rating ." and got ". $most_views ." page views. ";
 
 
-  $message .= ' Visit '. site_url() .'/dashboard/view-article/?article='. $post->ID .' to view article.';
+  $message .= ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $post->ID .' to view article.';
 // echo "<h1>test7!</h1>";
   mail(
     $author->user_email,
@@ -124,7 +124,7 @@ $email_list[$author->user_email][] = $post;
 
       $header = "From: gsequence@sequenceqcs.com\r\n";
       $message = "Your article '". $post->post_title ."' has still not been approved. \r\n It has been ". floor($days) ." days since you last submitted changes to this article. \n";
-      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view article.';
+      $message .= ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $post->ID .' to view article.';
       $body = send_mail_template($post,$message);
       // echo $message;
       $email_list[$author->user_email][] = $message;
@@ -149,7 +149,7 @@ $email_list[$author->user_email][] = $post;
 
         $message = "You have still not approved or rejected article '". $post->post_title ."' by author ". $author->display_name .".\r\n";
         $message .=   "It has been ". floor($days) ." days since this article was last submitted for approval. \n";
-        $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view article.';
+        $message .= ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $post->ID .' to view article.';
         $body = send_mail_template($post,$message);
         // echo $message;
         mail(
@@ -187,7 +187,7 @@ $debug_email .= $author->user_email ."\r\n";
     if($days > 7){
       $header = "From: gsequence@sequenceqcs.com\r\n";
       $message = "Your article draft '". $post->post_title ."' has not yet been submitted for approval. \r\n It has been ". floor($days) ." days since you last updated this draft. \n";
-      $message .= ' Visit '. site_url() .'/dashboard/add-article/?article='. $post->ID .' to view your draft.';
+      $message .= ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $post->ID .' to view your draft.';
       $body = send_mail_template($post,$message);
       // echo $message;
       $email_list[$author->user_email][] = $message;
@@ -288,7 +288,7 @@ $debug_email .= $author->user_email ."\r\n";
               <td>
                 <table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
                   <tr>
-                    <td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
+                    <td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
                   </tr>
                 </table><!-- header -->
               </td>
@@ -298,7 +298,7 @@ $debug_email .= $author->user_email ."\r\n";
                 <table id="content-2" cellpadding="0" cellspacing="0" align="center">
                 <tr>
                   <td align="center" width="100%">
-                    <p>Click <a href="'. site_url() .'/dashboard/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
+                    <p>Click <a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
                   </td>
                 </tr>
                 </table><!-- content-2 -->
@@ -326,7 +326,7 @@ $debug_email .= $author->user_email ."\r\n";
                 <table id="content-2" cellpadding="0" cellspacing="0" align="center">
                 <tr>
                   <td align="center" width="100%">
-                    <p>Click <a href="'. site_url() .'/dashboard/view-article/?article='. $post->ID .'">here</a> to view article. </p>
+                    <p>Click <a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $post->ID .'">here</a> to view article. </p>
                   </td>
                 </tr>
                 </table><!-- content-2 -->

@@ -7,7 +7,7 @@
       </div>
       <div id="article-draft-results" class="user-article-results">
         <?php foreach($article_drafts as $post){ ?>
-            <a href="<?php echo site_url() . "/dashboard/add-article/?article=" . $post->ID; ?>">
+            <a href="<?php echo site_url() . "/". SKB_PLUGIN_HOME ."/add-article/?article=" . $post->ID; ?>">
               <h3><?php echo $post->post_title; ?></h3>
             </a>
         <?php } ?>

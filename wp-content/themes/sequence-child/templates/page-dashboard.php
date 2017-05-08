@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Dashboard
+ * Template Name: Knowledgebase Dashboard
  */
  ?>
 <?php
@@ -62,7 +62,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 
 
 
-					<?php if(is_page('dashboard')){?>
+					<?php if(is_page(SKB_PLUGIN_HOME)){?>
 
 
             <div class="row">
@@ -98,7 +98,7 @@ require_once( $parse_uri[0] . 'wp-admin/includes/template.php' );
 		</div>
 
 
-    <?php if(is_page('dashboard')){?>
+    <?php if(is_page(SKB_PLUGIN_HOME)){?>
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 search_sidebar">
 
 

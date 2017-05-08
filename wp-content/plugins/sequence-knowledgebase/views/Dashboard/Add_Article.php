@@ -312,14 +312,14 @@
       }
 
       if($(this).hasClass('cancel-article')){
-        window.location.href = "<?php echo site_url(); ?>/dashboard/";
+        window.location.href = "<?php echo site_url(); ?>/". SKB_PLUGIN_HOME ."/";
       }
 
       if($(this).hasClass('delete-article')){
         $.post(url + 'controllers/ajax_controller.php?method=unpublish_article',
           { article_id: '<?php echo $article->ID; ?>' },
           function(data){
-            window.location.href = "<?php echo site_url(); ?>/dashboard/";
+            window.location.href = "<?php echo site_url(); ?>/". SKB_PLUGIN_HOME ."/";
           }
         );
       } else if ($(this).hasClass('save-article')){
@@ -342,7 +342,7 @@
               // alert($('#reject-article-message').val())
               $('#skb-dashboard-modal .modal-body p').hide();
               $('#skb-dashboard-modal .modal-body span').show();
-              window.location.href = "<?php echo site_url(); ?>/dashboard/";
+              window.location.href = "<?php echo site_url(); ?>/". SKB_PLUGIN_HOME ."/";
             }
           );
         });

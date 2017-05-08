@@ -20,6 +20,7 @@
   //define plugin variables
   define('SKB_PLUGIN_URL', plugin_dir_url( __FILE__ ));
   define('SKB_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
+  define('SKB_PLUGIN_HOME',"knowledgebase");
 
   add_action('init', 'skb_header_scripts');
 
@@ -71,7 +72,8 @@
       wp_localize_script('skb-header-js', 'php_vars', array(
           'url' => SKB_PLUGIN_URL,
           'path' =>    SKB_PLUGIN_PATH,
-          'site'=>  site_url()
+          'site'=>  site_url(),
+          'home' => SKB_PLUGIN_HOME
       ));
 
 

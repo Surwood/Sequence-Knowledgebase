@@ -198,10 +198,10 @@
 
     $('.article-action').click(function(){
       if($(this).hasClass('cancel-article')){
-        window.location.href = "<?php echo site_url(); ?>/dashboard/";
+        window.location.href = "<?php echo site_url() . "/" . SKB_PLUGIN_HOME; ?>/";
       }
       if($(this).hasClass('edit-article')){
-        window.location.href = "<?php echo site_url(); ?>/dashboard/add-article?article=<?php echo $article->ID; ?>";
+        window.location.href = "<?php echo site_url() . "/" . SKB_PLUGIN_HOME; ?>/add-article?article=<?php echo $article->ID; ?>";
       }
     });
 

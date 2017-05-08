@@ -488,7 +488,7 @@
           			<td>
           				<table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
           					<tr>
-          						<td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
+          						<td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/". SKB_PLUGIN_HOME ."/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
           					</tr>
           				</table><!-- header -->
           			</td>
@@ -498,7 +498,7 @@
           				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
                   <tr>
                     <td align="center" width="100%">
-                      <p>Click <a href="'. site_url() .'/dashboard/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
+                      <p>Click <a href="'. site_url() .'/". SKB_PLUGIN_HOME ."/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
                     </td>
                   </tr>
           				</table><!-- content-2 -->
@@ -528,7 +528,7 @@
           				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
                   <tr>
                     <td align="center" width="100%">
-                      <p>Click <a href="'. site_url() .'dashboard/view-article/?article='. $article->ID .'">here</a> to view article. </p>
+                      <p>Click <a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $article->ID .'">here</a> to view article. </p>
                     </td>
                   </tr>
           				</table><!-- content-2 -->

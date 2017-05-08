@@ -10,12 +10,12 @@
     // jQuery(function($){
       jQuery('.return-home').click(function(){
         // alert('test');
-        window.location.href = php_vars.site + "/dashboard/";
+        window.location.href = php_vars.site + "/"+ php_vars.home +"/";
       });
 
       jQuery('#add-article-button').click(function(){
         // alert('test');
-        window.location.href = php_vars.site + "/dashboard/add-article/";
+        window.location.href = php_vars.site + "/"+ php_vars.home +"/add-article/";
       });
 
 

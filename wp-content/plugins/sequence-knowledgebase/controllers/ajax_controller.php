@@ -158,7 +158,7 @@
         $tag1 = trim($_POST['postCategories2']);
         $tag2 = trim($_POST['postCategories3']);
         $tag3 = trim($_POST['postCategories4']);
-        $item = trim($_POST['look']);
+        $item = trim($_REQUEST['look']);
         $dateBefore = trim($_POST['dateBefore']);
         $dateAfter = trim($_POST['dateAfter']);
 

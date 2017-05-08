@@ -2,10 +2,10 @@
 
   <?php
     if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-    
+
   ?>
     <div class="full-width">
-      <a href="<?php echo site_url() . "/dashboard/view-article/?article=" . get_the_ID(); ?>">
+      <a href="<?php echo site_url() . "/". SKB_PLUGIN_HOME ."/view-article/?article=" . get_the_ID(); ?>">
       <h1><?php the_title(); ?></h1>
 
       <?php the_content(); ?>

@@ -61,7 +61,7 @@ if ($pageposts):
       ?>
         <div class="row">
           <div class="col-sm-7 text-left">
-              <a href="<?php echo site_url(). "/dashboard/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
+              <a href="<?php echo site_url() . "/" . SKB_PLUGIN_HOME ."/view-article/?article=" .$post['ID'];?>"><span><?php echo $post['post_title']; ?></span></a>
           </div>
           <!-- <div class="col-sm-4 text-left"><?php echo $post['post_excerpt'];?></div> -->
           <?php $rating = $post['post_rate']; ?>

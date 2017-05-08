@@ -36,24 +36,24 @@
         $this->subject = "Approval request.";
         $this->message = $this->author->display_name . " is requesting approval for article '" . $this->article->post_title . "'";
         $to = $this->approver->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
         $this->subject = "Approval requested.";
         $this->message = "You sent an approval request to ". $this->approver->display_name ." for article '" . $this->article->post_title . "'";
         $to = $this->author->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
       } elseif ($reason == "approval"){
 
         $this->subject = "Article approved.";
         $this->message = "Your article '". $this->article->post_title ."' has been approved by " . $this->approver->display_name . ".";
         $to = $this->author->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
         $this->subject = "Approval sent.";
         $this->message = "You approved article '" . $this->article->post_title . "' by author " . $this->author->display_name;
         $to = $this->approver->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
       } elseif ($reason == "rejection"){
 
@@ -61,13 +61,13 @@
         $this->message = "Your article '". $this->article->post_title ."' has been rejected by " . $this->approver->display_name . ".\r\n";
         $this->message .= $this->rejection_message;
         $to = $this->author->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
         $this->subject = "Rejection sent.";
         $this->message = "You rejected article '". $this->article->post_title ."' by author " . $this->author->display_name . "\r\n";
         $this->message .= $this->rejection_message;
         $to = $this->author->user_email;
-        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/dashboard/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
+        mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
 
 
@@ -135,7 +135,7 @@
                   <td>
                     <table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
                       <tr>
-                        <td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/dashboard/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
+                        <td width="100%" bgcolor="#ffffff"><a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/"><img alt="SEQUENCE KNOWLEDGEBASE" src="'. SKB_PLUGIN_URL .'images/logo.png" /></td>
                       </tr>
                     </table><!-- header -->
                   </td>
@@ -145,7 +145,7 @@
                     <table id="content-2" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                       <td align="center" width="100%">
-                        <p>Click <a href="'. site_url() .'/dashboard/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
+                        <p>Click <a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/">here</a> to visit Sequence Knowledgebase Dashboard. </p>
                       </td>
                     </tr>
                     </table><!-- content-2 -->
@@ -173,7 +173,7 @@
                     <table id="content-2" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                       <td align="center" width="100%">
-                        <p>Click <a href="'. site_url() .'/dashboard/view-article/?article='. $this->article->ID .'">here</a> to view article. </p>
+                        <p>Click <a href="'. site_url() .'/'. SKB_PLUGIN_HOME .'/view-article/?article='. $this->article->ID .'">here</a> to view article. </p>
                       </td>
                     </tr>
                     </table><!-- content-2 -->
