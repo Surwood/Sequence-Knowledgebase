@@ -249,7 +249,7 @@
         ORDER BY p.post_date DESC
         "; // LIMIT 0, 50   [no limit has no problem]
 
-        $pageposts = $wpdb->get_results($search_sql,OBJECT);
+        // $pageposts = $wpdb->get_results($search_sql,OBJECT);
 
         require_once SKB_PLUGIN_PATH . "models/Search.php";
 
