@@ -66,7 +66,7 @@
         $this->subject = "Rejection sent.";
         $this->message = "You rejected article '". $this->article->post_title ."' by author " . $this->author->display_name . "\r\n";
         $this->message .= $this->rejection_message;
-        $to = $this->author->user_email;
+        $to = $this->approver->user_email;
         mail($to,$this->subject,$this->message . ' Visit '. site_url() .'/'. SKB_PLUGIN_HOME .'/add-article/?article='. $this->article->ID .' to view article.' ,$this->header);
 
 
