@@ -124,7 +124,7 @@
           update_post_meta($post_id,'post_approver',$article->post_approver);
         }
 
-        if(in_array('sequence_author',(array)$user->roles ) || in_array('sequence_approver',(array)$user->roles ) in_array('sequence_admin',(array)$user->roles )){
+        if(in_array('sequence_author',(array)$user->roles ) || in_array('sequence_approver',(array)$user->roles ) || in_array('sequence_admin',(array)$user->roles )){
 
           if(in_array('sequence_approver',(array)$user->roles )  && ($article->post_approver == $user->ID)){
 
