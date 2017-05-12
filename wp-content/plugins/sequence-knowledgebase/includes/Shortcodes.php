@@ -118,20 +118,22 @@
 
         // die('test');
 
+        $article->post_approver = get_post_meta($article->ID,'post_approver',true);
+
         if(isset($_POST['postApprover'])){
           $article->post_approver = $_POST['postApprover'];
           // die($article->post_approver);
           update_post_meta($post_id,'post_approver',$article->post_approver);
         }
 
-        if(in_array('sequence_approver',(array)$user->roles )){
+        if(in_array('sequence_approver',(array)$user->roles ) && ($article->post_approver == $user->ID)){
 
-          $email = new Sequence_Email($article->post_author,$user->ID,$article->ID);
+          $email = new Sequence_Email($article->post_author,$article->post_approver,$article->ID);
           // var_dump($email);
           $email->send("approval");
         } elseif(in_array('sequence_author',(array)$user->roles )){
 
-          $email = new Sequence_Email($user->ID,$_POST['postApprover'],$article->ID);
+          $email = new Sequence_Email($user->ID,$article->post_approver,$article->ID);
           // var_dump($email);
           $email->send("request");
         }

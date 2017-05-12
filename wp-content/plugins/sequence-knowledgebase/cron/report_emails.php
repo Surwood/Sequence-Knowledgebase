@@ -11,8 +11,8 @@
 
   // die($parse_uri[0] . '/wp-load.php');
 
-  require_once( '/home/seqgxp2100/public_html/dev.sequencegxp.com/wp-load.php' );
-  // require_once( '/home/seqgxp2100/public_html/wp-load.php' );
+  // require_once( '/home/seqgxp2100/public_html/dev.sequencegxp.com/wp-load.php' );
+  require_once( '/home/seqgxp2100/public_html/wp-load.php' );
 
 
 
