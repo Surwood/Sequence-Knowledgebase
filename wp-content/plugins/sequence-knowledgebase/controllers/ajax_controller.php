@@ -165,6 +165,7 @@
         // var_dump($dateAfter);
 
         //building search query depending on several conditions.
+        //this query throws a lot of errors. (object_id is not a real field in the terms table)
         $search_sql = "SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
         FROM ". $wpdb->posts ." p
         LEFT JOIN ".$wpdb->terms." r ON (p.ID = r.object_id)
