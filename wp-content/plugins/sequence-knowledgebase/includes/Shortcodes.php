@@ -124,17 +124,24 @@
           update_post_meta($post_id,'post_approver',$article->post_approver);
         }
 
-        if(in_array('sequence_approver',(array)$user->roles )  && ($article->post_approver == $user->ID)){
+        if(in_array('sequence_author',(array)$user->roles ) || in_array('sequence_approver',(array)$user->roles ) in_array('sequence_admin',(array)$user->roles )){
 
-          $email = new Sequence_Email($article->post_author,$article->post_approver,$article->ID);
-          // var_dump($email);
-          $email->send("approval");
-        } elseif(in_array('sequence_author',(array)$user->roles )){
+          if(in_array('sequence_approver',(array)$user->roles )  && ($article->post_approver == $user->ID)){
 
-          $email = new Sequence_Email($user->ID,$article->post_approver,$article->ID);
-          // var_dump($email);
-          $email->send("request");
+            $email = new Sequence_Email($article->post_author,$article->post_approver,$article->ID);
+            // var_dump($email);
+            $email->send("approval");
+          } else {
+
+            $email = new Sequence_Email($user->ID,$article->post_approver,$article->ID);
+            // var_dump($email);
+            $email->send("request");
+
+          }
+
         }
+
+
 
 
         $submit_test = true;
