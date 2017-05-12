@@ -5,7 +5,7 @@
     Plugin Name: Sequence Knowledgebase
     Plugin URI: http://www/scaryprankster.com/
     Description: Knowledgebase for Sequence users to add and manage articles.
-    Version: 1.4.2
+    Version: 1.4.3
     Author: Jay Long
 
 

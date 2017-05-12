@@ -1,0 +1,1517 @@
+[08-May-2017 15:16:40 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 15:17:40 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 18:15:37 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 18:15:37 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 20:18:49 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 20:19:23 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[08-May-2017 20:30:57 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:42:48 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:42:48 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:45:04 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:45:04 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:48:30 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 10:48:30 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:35:01 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:36:26 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:56:39 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:56:39 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:56:56 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 13:56:56 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 14:02:01 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 14:02:01 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 14:02:09 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 18:42:15 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 18:42:15 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 18:42:23 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 18:42:23 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[09-May-2017 18:44:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:45:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:46:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:47:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:48:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:49:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:50:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:51:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:52:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:53:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:54:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:55:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:56:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:57:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:58:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 18:59:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:00:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:01:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:02:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:03:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:04:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:05:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:06:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:07:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:08:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:09:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:10:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:11:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:12:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:13:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:14:29 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:15:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:16:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:17:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:18:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:19:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:20:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:21:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:22:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:23:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:24:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:25:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:26:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:27:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:28:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:29:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:30:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:31:29 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:32:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:33:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:34:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:35:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:36:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:37:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:38:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:39:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:40:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:41:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:42:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:43:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:44:29 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:45:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:46:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:47:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:48:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:49:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:50:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:51:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:52:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:53:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:54:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:55:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:56:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:57:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:58:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 19:59:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:00:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:01:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:02:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:03:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:04:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:05:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:06:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:07:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:08:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:09:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:10:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:11:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:12:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:13:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:14:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:15:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:16:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:17:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:18:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:19:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:20:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:21:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:22:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:23:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:24:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:26:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:27:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:28:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:29:29 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:30:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:31:29 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:32:27 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:33:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[09-May-2017 20:34:28 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:48:41 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:49:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:50:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:51:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:52:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:53:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:54:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:55:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:56:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:57:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:58:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 10:59:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:00:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:01:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:02:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:03:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:04:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:05:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:06:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:07:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:08:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:09:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:10:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:11:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:12:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:13:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:14:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:15:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:16:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:17:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:23:36 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:24:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:26:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:27:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:28:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:29:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:30:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:31:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:32:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:33:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:34:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:35:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:36:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:37:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:38:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:39:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:40:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:41:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:42:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:44:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:45:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:46:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:48:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:49:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:50:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:51:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:52:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:53:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:54:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:55:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:56:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:57:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:58:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 11:59:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:00:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:01:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:02:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:03:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:09:38 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:10:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:11:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:12:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:13:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:14:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:15:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:16:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:17:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:18:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:19:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:20:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:21:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:22:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:23:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:24:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:25:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:26:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:27:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:28:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:29:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:30:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:31:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:33:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:34:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:35:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:36:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:37:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:38:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:39:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:40:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:41:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:42:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:43:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:44:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:45:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:46:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:48:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:49:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:50:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:51:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:52:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:53:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:54:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:55:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:56:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:57:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:58:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 12:59:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:00:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:01:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:02:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:03:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:04:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:05:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:06:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:07:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:08:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:09:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:10:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:11:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:12:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:13:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:14:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:15:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:16:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:17:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:18:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:19:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:20:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:21:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:22:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:23:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:24:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:25:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:26:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:27:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:28:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:29:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:30:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:31:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:33:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:34:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:35:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:36:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:37:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:38:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:39:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:40:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:41:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:42:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:44:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:45:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:46:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:47:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:48:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:49:37 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:50:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:51:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:52:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:53:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:54:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:55:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:56:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:57:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 13:59:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:00:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:01:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:02:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:03:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:04:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:05:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:06:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:07:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:08:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:09:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:10:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:11:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:12:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:13:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:14:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:15:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:16:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:17:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:18:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:19:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:20:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:21:38 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:22:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:23:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:24:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:25:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:26:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:27:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:28:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:29:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:30:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:31:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:33:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:34:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:35:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:36:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:37:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:38:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:39:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:40:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:41:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:42:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:44:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:45:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:46:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:47:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:48:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:49:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:50:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:51:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:52:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:53:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:54:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:55:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:56:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:57:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:58:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 14:59:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:00:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:01:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:02:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:03:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:04:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:05:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:06:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:07:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:08:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:09:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:10:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:11:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:12:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:13:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:14:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:15:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:16:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:17:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:18:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:19:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:20:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:21:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:22:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:23:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:24:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:25:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:26:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:27:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:28:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:29:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:30:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:31:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:33:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:34:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:35:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:36:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:37:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:38:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:39:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:40:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:41:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:42:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:44:35 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:45:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:46:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:47:29 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:29 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:34 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:34 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:49 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:49 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:59 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:47:59 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:09 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:09 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:21 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:21 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:38 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:38 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:48 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:48:48 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:49:04 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:49:04 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:50:10 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:51:11 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 15:51:44 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:51:44 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:52:10 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 15:52:10 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:46:42 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:46:42 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:49:35 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:49:35 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:50:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:51:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:52:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:53:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:55:49 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:56:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:57:50 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 18:58:04 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:58:05 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:58:41 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 18:58:41 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:30:16 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:30:16 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:31:27 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:31:27 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:31:55 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:31:55 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:32:37 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:32:37 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:34:12 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:34:12 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[10-May-2017 19:35:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:36:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:37:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:38:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:39:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:41:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:42:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:43:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:44:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:45:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:46:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:47:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:48:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:49:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:50:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:51:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:52:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:53:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:54:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:55:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:56:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:57:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:58:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 19:59:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:00:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:01:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:02:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:04:16 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:05:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:06:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:07:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:08:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:09:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:10:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:11:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:12:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:13:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:14:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:15:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:16:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:17:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:18:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:19:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:20:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:21:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:22:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:23:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:24:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:25:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:26:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:27:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:28:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:29:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:30:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:31:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:32:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:33:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:34:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:35:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:36:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:37:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:38:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:39:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:40:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:41:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:42:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:43:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:44:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:46:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:47:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:48:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:49:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:50:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:51:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:52:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:53:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:54:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:55:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:56:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:57:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:58:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 20:59:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:00:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:01:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:02:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:04:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:05:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:06:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:07:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:08:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:09:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:10:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:11:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:12:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:13:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:14:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:15:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:16:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:17:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:18:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:19:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:20:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:21:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:22:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:23:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:24:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:25:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:26:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:27:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:28:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:29:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:30:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:31:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:32:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:33:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:34:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:35:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:36:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:37:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:38:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:39:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:40:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:41:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:42:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:43:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:44:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 21:46:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:05:39 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:06:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:07:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:08:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:09:36 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:10:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:11:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:12:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:13:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:14:34 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:15:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:16:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:17:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:18:33 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[10-May-2017 22:19:32 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:36:38 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:37:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:38:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:39:19 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:40:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:41:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:42:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:43:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:44:19 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:45:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:46:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:47:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:48:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:49:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:50:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:51:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:52:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:53:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:54:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:55:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:56:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:57:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:58:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 10:59:19 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:00:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:01:19 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:02:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:03:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:04:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:05:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:06:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:07:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:08:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:09:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:10:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:11:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:12:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:13:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:14:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:15:18 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:16:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:17:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:18:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:19:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:20:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:21:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:22:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 11:23:17 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:12:52 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:12:52 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:14:23 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:15:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:16:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:16:46 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:16:46 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:17:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:18:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:19:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:20:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:21:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:22:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:23:22 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:24:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:25:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:26:21 UTC] PHP Warning:  Creating default object from empty value in /home/seqgxp2100/public_html/wp-content/plugins/sequence-knowledgebase/controllers/ajax_controller.php on line 115
+[11-May-2017 15:26:49 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:26:49 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:26:53 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:26:53 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:35:51 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:35:51 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:35:59 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:35:59 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:36:20 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[11-May-2017 15:36:20 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[12-May-2017 14:32:33 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results
+[12-May-2017 14:32:33 UTC] WordPress database error Unknown column 'r.object_id' in 'on clause' for query SELECT  p.ID, p.post_title, p.post_excerpt, p.post_date
+        FROM wp_wxnnNt6qb6_posts p
+        LEFT JOIN wp_wxnnNt6qb6_terms r ON (p.ID = r.object_id)
+        LEFT JOIN wp_wxnnNt6qb6_postmeta m ON ( p.ID = m.post_id )
+        WHERE 1=1 
+        
+        AND p.post_type = 'skb_article'
+        AND ((p.post_status = 'publish'))
+        GROUP BY p.ID
+        ORDER BY p.post_date DESC
+         made by get_search_results

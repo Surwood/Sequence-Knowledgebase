@@ -116,8 +116,6 @@
           wp_set_object_terms($post_id,$categories,'article_tag3');
         }
 
-        // die('test');
-
         $article->post_approver = get_post_meta($article->ID,'post_approver',true);
 
         if(isset($_POST['postApprover'])){
@@ -126,7 +124,7 @@
           update_post_meta($post_id,'post_approver',$article->post_approver);
         }
 
-        if(in_array('sequence_approver',(array)$user->roles ) && ($article->post_approver == $user->ID)){
+        if(in_array('sequence_approver',(array)$user->roles )  && ($article->post_approver == $user->ID)){
 
           $email = new Sequence_Email($article->post_author,$article->post_approver,$article->ID);
           // var_dump($email);
